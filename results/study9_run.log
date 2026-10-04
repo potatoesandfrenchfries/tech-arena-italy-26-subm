@@ -1,0 +1,78 @@
+trained the surrogates (232s)
+calibration quantiles (random, selected): fno 0.01/0.01, g12 0.06/0.07, pod136 0.28/0.27
+  task 0 pool 0: best FoM 1.83e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.632 (17s)
+  task 0 pool 1: best FoM 1.62e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.767 (17s)
+  task 0 pool 2: best FoM 1.73e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.564 (16s)
+  task 0 pool 3: best FoM 1.72e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.727 (15s)
+  task 0 pool 4: best FoM 1.65e-05; fno A5 regret 0.005, g12 A5 regret 0.000, pod136 A5 regret 0.585 (15s)
+  task 0 pool 5: best FoM 2e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.698 (17s)
+  task 0 pool 6: best FoM 1.69e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.416 (17s)
+  task 0 pool 7: best FoM 1.79e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.667 (17s)
+  task 0 pool 8: best FoM 1.81e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.619 (16s)
+  task 0 pool 9: best FoM 1.96e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.708 (16s)
+wrote results/study9_partial_20261004_142828.csv
+  task 1 pool 0: best FoM 3.35e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.158 (16s)
+  task 1 pool 1: best FoM 3.38e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.434 (16s)
+  task 1 pool 2: best FoM 3.56e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.153 (16s)
+  task 1 pool 3: best FoM 3.38e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 1 pool 4: best FoM 3.62e-05; fno A5 regret 0.000, g12 A5 regret 0.012, pod136 A5 regret 0.082 (15s)
+  task 1 pool 5: best FoM 3.56e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.147 (14s)
+  task 1 pool 6: best FoM 3.38e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.419 (15s)
+  task 1 pool 7: best FoM 3.53e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.036 (15s)
+  task 1 pool 8: best FoM 3.57e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.069 (15s)
+  task 1 pool 9: best FoM 3.26e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.131 (15s)
+wrote results/study9_partial_20261004_143100.csv
+  task 2 pool 0: best FoM 4.78e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 2 pool 1: best FoM 4.29e-05; fno A5 regret 0.040, g12 A5 regret 0.000, pod136 A5 regret 0.045 (15s)
+  task 2 pool 2: best FoM 4.3e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (14s)
+  task 2 pool 3: best FoM 4.86e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 2 pool 4: best FoM 4.57e-05; fno A5 regret 0.127, g12 A5 regret 0.000, pod136 A5 regret 0.000 (17s)
+  task 2 pool 5: best FoM 4.35e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.008 (16s)
+  task 2 pool 6: best FoM 4.88e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 2 pool 7: best FoM 4.31e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 2 pool 8: best FoM 4.44e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (14s)
+  task 2 pool 9: best FoM 4.36e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+wrote results/study9_partial_20261004_143331.csv
+  task 3 pool 0: best FoM 1.44e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.122 (16s)
+  task 3 pool 1: best FoM 1.42e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.079 (15s)
+  task 3 pool 2: best FoM 1.53e-05; fno A5 regret 0.109, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 3 pool 3: best FoM 1.38e-05; fno A5 regret 0.028, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 3 pool 4: best FoM 1.41e-05; fno A5 regret 0.018, g12 A5 regret 0.000, pod136 A5 regret 0.000 (17s)
+  task 3 pool 5: best FoM 1.34e-05; fno A5 regret 0.065, g12 A5 regret 0.000, pod136 A5 regret 0.081 (16s)
+  task 3 pool 6: best FoM 1.49e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (15s)
+  task 3 pool 7: best FoM 1.4e-05; fno A5 regret 0.090, g12 A5 regret 0.000, pod136 A5 regret 0.000 (16s)
+  task 3 pool 8: best FoM 1.49e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (16s)
+  task 3 pool 9: best FoM 1.45e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.244 (16s)
+wrote results/study9_partial_20261004_143609.csv
+  task 4 pool 0: best FoM 4.52e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.000 (16s)
+  task 4 pool 1: best FoM 4.54e-05; fno A5 regret 0.012, g12 A5 regret 0.012, pod136 A5 regret 0.052 (16s)
+  task 4 pool 2: best FoM 4.28e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.391 (15s)
+  task 4 pool 3: best FoM 4.54e-05; fno A5 regret 0.039, g12 A5 regret 0.000, pod136 A5 regret 0.041 (15s)
+  task 4 pool 4: best FoM 4.23e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.024 (16s)
+  task 4 pool 5: best FoM 4.34e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.403 (17s)
+  task 4 pool 6: best FoM 4.37e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.042 (15s)
+  task 4 pool 7: best FoM 4.48e-05; fno A5 regret 0.003, g12 A5 regret 0.000, pod136 A5 regret 0.049 (15s)
+  task 4 pool 8: best FoM 4.47e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.063 (15s)
+  task 4 pool 9: best FoM 4.42e-05; fno A5 regret 0.000, g12 A5 regret 0.000, pod136 A5 regret 0.085 (15s)
+wrote results/study9_partial_20261004_143844.csv
+
+Mean regret of full-wave random search by calls: 1: 0.693, 2: 0.615, 5: 0.498, 10: 0.401, 20: 0.312, 50: 0.204, 100: 0.136, 200: 0.082, 500: 0.028, 1000: 0.000
+Calls for random search to reach regret <= 0.1: 200
+
+fno: policy A mean regret by M: 1: 0.064, 2: 0.035, 5: 0.011, 10: 0.003, 20: 0.001, 50: 0.000
+  calls to reach regret <= 0.1: A needs 1 against 200 for random search -> SCREENING WORKS
+  policy B: mean calls 28.3 (certified in top 50: 22.4), mean regret 0.006; random search at the same calls 0.285; A at M = 50: 0.000 -> NO GAIN
+  optimiser's curse (surrogate over full-wave figure of merit of the top candidate, minus 1): +0.10
+  projection at 393k unknowns (not a measurement): screening 1000 designs 26 s plus 1 calls = 33 s, against 1320 s for random full-wave search
+
+g12: policy A mean regret by M: 1: 0.013, 2: 0.004, 5: 0.000, 10: 0.000, 20: 0.000, 50: 0.000
+  calls to reach regret <= 0.1: A needs 1 against 200 for random search -> SCREENING WORKS
+  policy B: mean calls 40.2 (certified in top 50: 10.6), mean regret 0.000; random search at the same calls 0.247; A at M = 50: 0.000 -> NO GAIN
+  optimiser's curse (surrogate over full-wave figure of merit of the top candidate, minus 1): -0.07
+  projection at 393k unknowns (not a measurement): screening 1000 designs 3000 s plus 1 calls = 3007 s, against 1320 s for random full-wave search
+
+pod136: policy A mean regret by M: 1: 0.494, 2: 0.365, 5: 0.195, 10: 0.143, 20: 0.114, 50: 0.041
+  calls to reach regret <= 0.1: A needs 50 against 200 for random search -> SCREENING WORKS
+  policy B: mean calls 41.1 (certified in top 50: 10.8), mean regret 0.041; random search at the same calls 0.229; A at M = 50: 0.041 -> NO GAIN
+  optimiser's curse (surrogate over full-wave figure of merit of the top candidate, minus 1): +12.10
+wrote results/study9_20261004_143844.csv

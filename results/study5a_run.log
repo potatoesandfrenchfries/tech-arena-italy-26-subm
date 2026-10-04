@@ -1,0 +1,40 @@
+device cuda; encoder width 24, steps 1000
+refine 4: 1504 unknowns, 200 test instances with references (2s)
+refine 5: 6080 unknowns, 200 test instances with references (9s)
+refine 6: 24448 unknowns, 200 test instances with references (59s)
+refine 7: 98048 unknowns, 200 test instances with references (349s)
+[0] trained 4 models (214s)
+  [0] refine 4: encoder_n100 0.237, fno_n100 0.236, encoder_n400 0.178, fno_n400 0.144, coarse_r2 0.565, coarse_r3 0.306 (219s)
+  [0] refine 5: encoder_n100 0.739, fno_n100 0.242, encoder_n400 0.643, fno_n400 0.170, coarse_r2 0.581, coarse_r3 0.346 (234s)
+  [0] refine 6: encoder_n100 0.862, fno_n100 0.247, encoder_n400 0.780, fno_n400 0.173, coarse_r2 0.586, coarse_r3 0.358 (294s)
+  [0] refine 7: encoder_n100 0.926, fno_n100 0.250, encoder_n400 0.866, fno_n400 0.170, coarse_r2 0.588, coarse_r3 0.361 (528s)
+wrote results/study5a_partial_20261004_044606.csv
+[1] trained 4 models (219s)
+  [1] refine 4: encoder_n100 0.252, fno_n100 0.233, encoder_n400 0.177, fno_n400 0.143 (222s)
+  [1] refine 5: encoder_n100 0.663, fno_n100 0.241, encoder_n400 0.614, fno_n400 0.165 (229s)
+  [1] refine 6: encoder_n100 0.801, fno_n100 0.249, encoder_n400 0.765, fno_n400 0.172 (251s)
+  [1] refine 7: encoder_n100 0.881, fno_n100 0.247, encoder_n400 0.861, fno_n400 0.169 (334s)
+wrote results/study5a_partial_20261004_045140.csv
+[2] trained 4 models (225s)
+  [2] refine 4: encoder_n100 0.238, fno_n100 0.244, encoder_n400 0.185, fno_n400 0.146 (229s)
+  [2] refine 5: encoder_n100 0.672, fno_n100 0.252, encoder_n400 0.658, fno_n400 0.165 (236s)
+  [2] refine 6: encoder_n100 0.804, fno_n100 0.257, encoder_n400 0.799, fno_n400 0.173 (261s)
+  [2] refine 7: encoder_n100 0.882, fno_n100 0.255, encoder_n400 0.884, fno_n400 0.172 (343s)
+wrote results/study5a_partial_20261004_045723.csv
+
+Median field error (mean over repeats) by mesh
+  encoder_n100refine 4: 0.242  refine 5: 0.691  refine 6: 0.822  refine 7: 0.896
+  fno_n100    refine 4: 0.238  refine 5: 0.245  refine 6: 0.251  refine 7: 0.250
+  encoder_n400refine 4: 0.180  refine 5: 0.638  refine 6: 0.781  refine 7: 0.870
+  fno_n400    refine 4: 0.144  refine 5: 0.166  refine 6: 0.173  refine 7: 0.170
+  coarse_r2   refine 4: 0.565  refine 5: 0.581  refine 6: 0.586  refine 7: 0.588
+  coarse_r3   refine 4: 0.306  refine 5: 0.346  refine 6: 0.358  refine 7: 0.361
+
+Ratio to the refine-4 error (hold if at most 1.25 for the encoder)
+  encoder_n100refine 5: 2.86  refine 6: 3.40  refine 7: 3.70
+  fno_n100    refine 5: 1.03  refine 6: 1.05  refine 7: 1.05
+  encoder_n400refine 5: 3.55  refine 6: 4.34  refine 7: 4.84
+  fno_n400    refine 5: 1.15  refine 6: 1.20  refine 7: 1.18
+encoder trained on 100: TRANSFER HOLDS TO REFINE 4; accuracy holds where the cost win is (refine 6 and 7): NO
+encoder trained on 400: TRANSFER HOLDS TO REFINE 4; accuracy holds where the cost win is (refine 6 and 7): NO
+wrote results/study5a_20261004_045723.csv

@@ -1,0 +1,32 @@
+policy,calls,mean_regret
+random full-wave search,1,0.6928
+random full-wave search,2,0.6154
+random full-wave search,5,0.4976
+random full-wave search,10,0.4011
+random full-wave search,20,0.3116
+random full-wave search,50,0.2043
+random full-wave search,100,0.1361
+random full-wave search,200,0.0816
+random full-wave search,500,0.0283
+random full-wave search,1000,0.0000
+FNO screen and verify top M,1,0.0638
+FNO screen and verify top M,2,0.0346
+FNO screen and verify top M,5,0.0107
+FNO screen and verify top M,10,0.0030
+FNO screen and verify top M,20,0.0009
+FNO screen and verify top M,50,0.0000
+FNO with certificate gating,28.3,0.0061
+"encoder, 78 dim screen and verify top M",1,0.0130
+"encoder, 78 dim screen and verify top M",2,0.0044
+"encoder, 78 dim screen and verify top M",5,0.0005
+"encoder, 78 dim screen and verify top M",10,0.0000
+"encoder, 78 dim screen and verify top M",20,0.0000
+"encoder, 78 dim screen and verify top M",50,0.0000
+"encoder, 78 dim with certificate gating",40.2,0.0002
+POD-136 screen and verify top M,1,0.4942
+POD-136 screen and verify top M,2,0.3654
+POD-136 screen and verify top M,5,0.1948
+POD-136 screen and verify top M,10,0.1428
+POD-136 screen and verify top M,20,0.1143
+POD-136 screen and verify top M,50,0.0405
+POD-136 with certificate gating,41.1,0.0405

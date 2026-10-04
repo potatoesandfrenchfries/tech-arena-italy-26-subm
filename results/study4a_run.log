@@ -1,0 +1,38 @@
+device cuda; encoder width 24, steps 1000
+[0] trained 6 models (243s)
+repeat 0: 796s
+[1] trained 6 models (244s)
+repeat 1: 788s
+[2] trained 6 models (241s)
+repeat 2: 720s
+
+Consistency, median over the test set (mean over repeats)
+model                  rel_err   power_balance   pec_violation      gauss_fine        residual  predict ms
+encoder_n100         2.442e-01       4.598e-15       0.000e+00       3.366e-01       3.296e+00        61.1
+fno_n100             2.353e-01       2.296e+00       3.914e-02       2.876e-01       3.052e+01        60.0
+pod136_n100          2.670e-01       4.252e-15       0.000e+00       4.554e-01       1.521e+00         4.4
+encoder_n400         1.769e-01       4.800e-15       0.000e+00       2.597e-01       3.115e+00        60.5
+fno_n400             1.480e-01       2.307e+00       2.361e-02       2.028e-01       3.025e+01        60.2
+pod136_n400          2.738e-01       4.514e-15       0.000e+00       4.386e-01       1.226e+00         4.1
+n_train=100: matched instances per repeat [668, 663, 659]; median gauss_fine encoder/FNO [(0.2942, 0.2375), (0.2951, 0.2296), (0.291, 0.2462)]
+n_train=400: matched instances per repeat [869, 860, 885]; median gauss_fine encoder/FNO [(0.2703, 0.2082), (0.2601, 0.2095), (0.2652, 0.2087)]
+Consistency verdict: BY CONSTRUCTION ONLY (by construction at each size: [True, True]; substantive: [np.False_, np.False_])
+
+Certificate verdicts
+  encoder_n100: DOES NOT TRACK (Spearman 0.262, random coverage 0.896, selected coverage 0.893)
+  encoder_n400: DOES NOT TRACK (Spearman 0.344, random coverage 0.893, selected coverage 0.913)
+  fno_n100: DOES NOT TRACK (Spearman 0.551, random coverage 0.893, selected coverage 0.977)
+  fno_n400: DOES NOT TRACK (Spearman 0.602, random coverage 0.895, selected coverage 0.977)
+  pod136_n100: NEEDS RECALIBRATION (Spearman 0.928, random coverage 0.900, selected coverage 0.937)
+  pod136_n400: NEEDS RECALIBRATION (Spearman 0.931, random coverage 0.899, selected coverage 0.940)
+
+Acceptance rate / false-accept rate at alpha = 0.1, tau = 0.05, 0.10, 0.20 (mean over repeats)
+  encoder_n100  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  fno_n100      tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.066/0.021
+  pod136_n100   tau 0.05: 0.001/0.001  tau 0.1: 0.013/0.003  tau 0.2: 0.179/0.014
+  encoder_n400  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.093/0.024
+  fno_n400      tau 0.05: 0.000/0.000  tau 0.1: 0.018/0.010  tau 0.2: 0.383/0.010
+  pod136_n400   tau 0.05: 0.000/0.000  tau 0.1: 0.004/0.001  tau 0.2: 0.155/0.010
+wrote results/study4a_certificate_20261004_035715.csv
+wrote results/study4a_consistency_20261004_035715.csv
+wrote results/study4a_matched_20261004_035715.csv

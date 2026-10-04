@@ -1,0 +1,38 @@
+width 24, steps 1500, variants ['GB', 'GBMR']
+  [0] GB n_train=100: train error 0.321, 29748 parameters (117s)
+  [0] GB n_train=100: refine 4 0.433, refine 5 0.499, refine 6 0.537, refine 7 0.576 (228s)
+  [0] GBMR n_train=100: train error 0.157, 29748 parameters (294s)
+  [0] GBMR n_train=100: refine 4 0.253, refine 5 0.285, refine 6 0.315, refine 7 0.345 (613s)
+  [0] GB n_train=400: train error 0.159, 29748 parameters (142s)
+  [0] GB n_train=400: refine 4 0.183, refine 5 0.272, refine 6 0.317, refine 7 0.358 (849s)
+  [0] GBMR n_train=400: train error 0.160, 29748 parameters (425s)
+  [0] GBMR n_train=400: refine 4 0.168, refine 5 0.193, refine 6 0.233, refine 7 0.279 (1366s)
+wrote results/study10_partial_20261004_152947.csv
+  [1] GB n_train=100: train error 0.125, 29748 parameters (130s)
+  [1] GB n_train=100: refine 4 0.242, refine 5 0.318, refine 6 0.368, refine 7 0.432 (241s)
+  [1] GBMR n_train=100: train error 0.208, 29748 parameters (303s)
+  [1] GBMR n_train=100: refine 4 0.336, refine 5 0.370, refine 6 0.394, refine 7 0.423 (627s)
+  [1] GB n_train=400: train error 0.168, 29748 parameters (130s)
+  [1] GB n_train=400: refine 4 0.193, refine 5 0.293, refine 6 0.348, refine 7 0.396 (846s)
+  [1] GBMR n_train=400: train error 0.240, 29748 parameters (420s)
+  [1] GBMR n_train=400: refine 4 0.243, refine 5 0.278, refine 6 0.310, refine 7 0.351 (1359s)
+wrote results/study10_partial_20261004_155226.csv
+  [2] GB n_train=100: train error 0.133, 29748 parameters (130s)
+  [2] GB n_train=100: refine 4 0.249, refine 5 0.330, refine 6 0.377, refine 7 0.428 (242s)
+  [2] GBMR n_train=100: train error 0.170, 29748 parameters (324s)
+  [2] GBMR n_train=100: refine 4 0.260, refine 5 0.294, refine 6 0.326, refine 7 0.363 (654s)
+  [2] GB n_train=400: train error 0.136, 29748 parameters (140s)
+  [2] GB n_train=400: refine 4 0.162, refine 5 0.276, refine 6 0.321, refine 7 0.366 (886s)
+  [2] GBMR n_train=400: train error 0.170, 29748 parameters (417s)
+  [2] GBMR n_train=400: refine 4 0.176, refine 5 0.203, refine 6 0.249, refine 7 0.287 (1406s)
+wrote results/study10_partial_20261004_161552.csv
+
+Median field error by mesh (mean over repeats); per-node G12 at refine 4: 100: 0.213, 400: 0.143
+  GB    n_train=100: refine 4: 0.308  refine 5: 0.382 (1.24)  refine 6: 0.427 (1.39)  refine 7: 0.478 (1.55) | refine-4 range over repeats 0.191 UNSTABLE | parity no, transfer fails
+  GB    n_train=400: refine 4: 0.179  refine 5: 0.281 (1.57)  refine 6: 0.329 (1.84)  refine 7: 0.373 (2.08) | refine-4 range over repeats 0.032 | parity no, transfer fails
+  GBMR  n_train=100: refine 4: 0.283  refine 5: 0.316 (1.12)  refine 6: 0.345 (1.22)  refine 7: 0.377 (1.33) | refine-4 range over repeats 0.084 | parity no, transfer fails
+  GBMR  n_train=400: refine 4: 0.195  refine 5: 0.225 (1.15)  refine 6: 0.264 (1.35)  refine 7: 0.306 (1.56) | refine-4 range over repeats 0.076 | parity no, transfer fails
+
+Outcomes: GB: FAILS, GBMR: FAILS
+Readout: FNO median field error at refine 6 and 7 is about 100: 0.25, 400: 0.17
+wrote results/study10_20261004_161552.csv

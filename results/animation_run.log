@@ -1,0 +1,7 @@
+trained (240s)
+computed 20 geometries x 61 frequencies (259s)
+encoder, basis re-predicted: median over geometries and frequencies 0.146, geometry 0 mean 0.171, worst-frequency median 0.175
+encoder, basis reused: median over geometries and frequencies 0.146, geometry 0 mean 0.170, worst-frequency median 0.178
+FNO: median over geometries and frequencies 0.151, geometry 0 mean 0.165, worst-frequency median 0.172
+wrote anim_sweep (269s)
+wrote anim_phase (273s)

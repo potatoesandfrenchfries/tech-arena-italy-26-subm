@@ -1,0 +1,13 @@
+trained encoder (width 24, steps 1000, n_train 100): train error 0.128
+single thread from here; waited 0 s for the load to settle (load 0.91)
+optimised path against original predict, max relative difference over 20 instances: 0.00e+00
+Profile at refine 4, median of 30 instances (ms): grid_inputs_orig 56.97, inputs_fast 0.13, cnn+sample 1.16, pou+lift 1.04, restrict_M 0.69, whiten+solve 1.22, predict_orig 61.75, predict_fast 3.46, load_after_profile 0.92
+wrote results/study4b_profile_20261004_041951.csv
+refine 4: N = 1504: full 2.1 ms | encoder pass 3.1 ms (basis 1.6) + eta_D 0.03 -> speedup 0.68 (loses) | per extra frequency 0.08 ms, F* 2 | max load 0.92 (0s)
+refine 5: N = 6080: full 11.1 ms | encoder pass 10.6 ms (basis 4.3) + eta_D 0.08 -> speedup 1.04 (WINS) | per extra frequency 0.30 ms, F* 1 | max load 0.92 (1s)
+refine 6: N = 24448: full 86.3 ms | encoder pass 41.4 ms (basis 16.2) + eta_D 0.65 -> speedup 2.06 (WINS) | per extra frequency 1.65 ms, F* 1 | max load 0.93 (6s)
+refine 7: N = 98048: full 755.0 ms | encoder pass 245.9 ms (basis 90.1) + eta_D 2.28 -> speedup 3.04 (WINS) | per extra frequency 9.25 ms, F* 1 | max load 0.94 (17s)
+refine 8: N = 392704: full 6567.5 ms | encoder pass 1376.1 ms (basis 501.9) + eta_D 16.46 -> speedup 4.72 (WINS) | per extra frequency 98.56 ms, F* 1 | max load 0.99 (91s)
+
+Smallest tested mesh where the encoder single query wins: 6080
+wrote results/study4b_scaling_20261004_042146.csv

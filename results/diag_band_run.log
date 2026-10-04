@@ -1,0 +1,17 @@
+true lambda_1 = 7.604 (double), half-width there = 0.380, band (6.5, 9.0)
+
+Loss: galerkin
+  n= 8  reproduction: held gal max 0.993, proj max 0.918 | true mode within half-width: False (nearest 52.108) | in band: [] | spurious in band: 0 | freqs with gal>0.5: 17/17 (median dist to nearest eig 114.5 half-widths vs nan when gal<=0.5) (19s)
+  n=16  reproduction: held gal max 1.061, proj max 0.685 | true mode within half-width: False (nearest 5.364) | in band: [] | spurious in band: 0 | freqs with gal>0.5: 17/17 (median dist to nearest eig 4.8 half-widths vs nan when gal<=0.5) (28s)
+  n=24  reproduction: held gal max 0.287, proj max 0.256 | true mode within half-width: True (nearest 7.630) | in band: [7.63] | spurious in band: 0 | freqs with gal>0.5: 0/17 (median dist to nearest eig nan half-widths vs 1.8 when gal<=0.5) (51s)
+
+Loss: proj
+  n= 8  reproduction: held gal max 1.964, proj max 0.025 | true mode within half-width: False (nearest 8.499) | in band: [8.5, 8.96] | spurious in band: 2 | freqs with gal>0.5: 15/17 (median dist to nearest eig 1.5 half-widths vs 5.8 when gal<=0.5) (28s)
+  n=16  reproduction: held gal max 1.661, proj max 0.015 | true mode within half-width: False (nearest 8.335) | in band: [6.74, 8.34] | spurious in band: 2 | freqs with gal>0.5: 14/17 (median dist to nearest eig 1.1 half-widths vs 0.2 when gal<=0.5) (35s)
+  n=24  reproduction: held gal max 1.630, proj max 0.014 | true mode within half-width: False (nearest 7.027) | in band: [7.03, 8.31, 8.34] | spurious in band: 3 | freqs with gal>0.5: 13/17 (median dist to nearest eig 0.8 half-widths vs 0.8 when gal<=0.5) (51s)
+
+Loss: mixed
+  n= 8  reproduction: held gal max 1.011, proj max 0.050 | true mode within half-width: False (nearest 22.873) | in band: [] | spurious in band: 0 | freqs with gal>0.5: 17/17 (median dist to nearest eig 39.0 half-widths vs nan when gal<=0.5) (29s)
+  n=16  reproduction: held gal max 1.165, proj max 0.032 | true mode within half-width: False (nearest 10.454) | in band: [] | spurious in band: 0 | freqs with gal>0.5: 17/17 (median dist to nearest eig 7.0 half-widths vs nan when gal<=0.5) (45s)
+  n=24  reproduction: held gal max 0.297, proj max 0.025 | true mode within half-width: True (nearest 7.631) | in band: [7.63] | spurious in band: 0 | freqs with gal>0.5: 0/17 (median dist to nearest eig nan half-widths vs 1.8 when gal<=0.5) (70s)
+wrote results/diag_band_20261003_223419.csv

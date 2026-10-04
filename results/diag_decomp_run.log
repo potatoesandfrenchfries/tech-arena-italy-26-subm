@@ -1,0 +1,33 @@
+true pair at 7.604 (2 vectors); kernel dim 481
+
+w=10.0, n=16  (reproduces Gate 1c: held gal max 0.305, energy max 0.135; 59s)
+  capture sin(angle) of true pair in space: [0.028, 0.4331]
+  alignment sin(angle) reduced resonant eigenvectors vs true pair (2 reduced modes at the resonance): [0.292, 0.6489]
+  lowest 8 reduced physical eigenvalues: [7.585, 7.648, 18.855, 28.683, 32.821, 33.419, 34.84, 37.014]
+  share of ||e_ref||^2 in each group (mean over 17 frequencies): kernel 0.077, pair 0.919, other 0.004
+  share of ||e_ref||^2 that is Galerkin error (mean over 17 frequencies): kernel 0.0726, pair 0.0082, other 0.0016 | rel_err 0.287
+  at omega^2=7.594 (nearest resonance): true solution kernel 0.017, pair 0.982, other 0.001 | error kernel 0.0768, pair 0.0148, other 0.0013 | rel_err 0.305
+  at omega^2=9.000 (farthest from resonance): true solution kernel 0.156, pair 0.832, other 0.012 | error kernel 0.0663, pair 0.0034, other 0.0024 | rel_err 0.268
+  + gradients of   5 level-1 hats: dim  141 | held gal mean 0.375 max 0.520 | proj max 0.028 | energy max 0.469
+      reduced physical eigenvalues: in band [7.799, 8.562], lowest 6 [7.799, 8.562, 21.625, 31.066, 33.258, 34.147]
+  + gradients of  25 level-2 hats: dim  161 | held gal mean 0.570 max 0.928 | proj max 0.028 | energy max 1.259
+      reduced physical eigenvalues: in band [7.982], lowest 6 [7.982, 9.792, 22.531, 32.168, 35.112, 35.892]
+  + gradients of 113 level-3 hats: dim  249 | held gal mean 0.678 max 1.077 | proj max 0.028 | energy max 1.696
+      reduced physical eigenvalues: in band [8.075], lowest 6 [8.075, 10.651, 24.327, 34.242, 40.062, 41.361]
+
+w=0.1, n=16  (reproduces Gate 1c: held gal max 0.298, energy max 0.132; 51s)
+  capture sin(angle) of true pair in space: [0.0267, 0.4083]
+  alignment sin(angle) reduced resonant eigenvectors vs true pair (1 reduced modes at the resonance): [nan]
+  lowest 8 reduced physical eigenvalues: [5.98, 7.633, 18.659, 28.492, 28.76, 30.113, 31.121, 32.148]
+  share of ||e_ref||^2 in each group (mean over 17 frequencies): kernel 0.077, pair 0.919, other 0.004
+  share of ||e_ref||^2 that is Galerkin error (mean over 17 frequencies): kernel 0.0720, pair 0.0068, other 0.0013 | rel_err 0.283
+  at omega^2=7.594 (nearest resonance): true solution kernel 0.017, pair 0.982, other 0.001 | error kernel 0.0762, pair 0.0114, other 0.0013 | rel_err 0.298
+  at omega^2=9.000 (farthest from resonance): true solution kernel 0.156, pair 0.832, other 0.012 | error kernel 0.0656, pair 0.0026, other 0.0015 | rel_err 0.264
+  + gradients of   5 level-1 hats: dim  141 | held gal mean 0.311 max 0.379 | proj max 0.027 | energy max 0.295
+      reduced physical eigenvalues: in band [7.715], lowest 6 [6.378, 7.715, 19.307, 28.871, 29.488, 31.128]
+  + gradients of  25 level-2 hats: dim  161 | held gal mean 0.515 max 0.831 | proj max 0.026 | energy max 1.039
+      reduced physical eigenvalues: in band [7.117, 7.933], lowest 6 [7.117, 7.933, 19.85, 30.017, 30.935, 32.455]
+  + gradients of 113 level-3 hats: dim  249 | held gal mean 0.616 max 0.993 | proj max 0.026 | energy max 1.450
+      reduced physical eigenvalues: in band [7.845, 8.034], lowest 6 [7.845, 8.034, 21.153, 32.674, 34.601, 36.513]
+
+wrote results/diag_decomp_20261003_225934.csv

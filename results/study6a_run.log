@@ -1,0 +1,27 @@
+mesh-free encoder width 24, steps 1000
+refine 4: 1504 unknowns, 200 test instances (2s)
+refine 5: 6080 unknowns, 200 test instances (8s)
+refine 6: 24448 unknowns, 200 test instances (61s)
+refine 7: 98048 unknowns, 200 test instances (19424s)
+  [0] n_train=100: train error 0.664, 17384 parameters
+  [0] n_train=400: train error 0.524, 17384 parameters
+[0] trained 2 mesh-free encoders (140s)
+  [0] refine 4: n=100 0.755, n=400 0.542 (141s)
+  [0] refine 5: n=100 0.822, n=400 0.598 (146s)
+  [0] refine 6: n=100 0.900, n=400 0.639 (163s)
+  [0] refine 7: n=100 1.129, n=400 0.693 (236s)
+wrote results/study6a_partial_20261004_112157.csv
+  [1] n_train=100: train error 0.705, 17384 parameters
+  [1] n_train=400: train error 0.680, 17384 parameters
+[1] trained 2 mesh-free encoders (136s)
+  [1] refine 4: n=100 0.724, n=400 0.712 (138s)
+  [1] refine 5: n=100 0.775, n=400 0.791 (143s)
+  [1] refine 6: n=100 0.828, n=400 0.817 (160s)
+  [1] refine 7: n=100 0.875, n=400 0.923 (231s)
+wrote results/study6a_partial_20261004_112549.csv
+  [2] n_train=100: train error 0.271, 17384 parameters
+  [2] n_train=400: train error 0.345, 17384 parameters
+[2] trained 2 mesh-free encoders (137s)
+  [2] refine 4: n=100 0.347, n=400 0.362 (138s)
+  [2] refine 5: n=100 0.402, n=400 0.416 (143s)
+  [2] refine 6: n=100 0.460, n=400 0.476 (160s)

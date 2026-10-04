@@ -1,0 +1,2 @@
+refine,grid_inputs_orig,inputs_fast,cnn+sample,pou+lift,restrict_M,whiten+solve,predict_orig,predict_fast,load_after_profile,max_rel_diff
+4,63.23271899600513,0.13183149712858722,1.2118550002924167,1.1045475039281882,0.6771924963686615,1.250057503057178,66.28363700292539,3.69194449740462,0.91,0.0

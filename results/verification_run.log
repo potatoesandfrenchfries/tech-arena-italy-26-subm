@@ -1,0 +1,45 @@
+repeat 0: done in 81s
+repeat 1: done in 78s
+repeat 2: done in 102s
+repeat 3: done in 96s
+repeat 4: done in 72s
+
+Mean (std) over repeats
+surrogate           eps_median         spearman_D         spearman_M         spearman_2        cov_naive_D           cov_a0.1          cov_a0.05       cov_sel_a0.1
+coarse_r2         0.563(0.004)      -0.328(0.030)      -0.517(0.033)       0.021(0.018)       1.000(0.000)       0.898(0.017)       0.947(0.018)       0.804(0.046)
+coarse_r3         0.309(0.002)      -0.155(0.026)      -0.441(0.028)       0.136(0.017)       1.000(0.000)       0.909(0.010)       0.948(0.012)       0.832(0.010)
+pod_128           0.283(0.015)       0.933(0.008)       0.939(0.008)       0.889(0.008)       1.000(0.000)       0.901(0.008)       0.955(0.010)       0.938(0.034)
+pod_16            0.763(0.062)       0.922(0.010)       0.929(0.009)       0.883(0.010)       0.712(0.014)       0.897(0.006)       0.946(0.010)       0.792(0.029)
+pod_64            0.397(0.055)       0.921(0.008)       0.924(0.007)       0.879(0.011)       1.000(0.000)       0.907(0.010)       0.954(0.008)       0.964(0.019)
+
+surrogate    cov_sel_recal_a0.       fom_bias_all       fom_bias_sel  accept_a0.1_t0.05  falseaccept_a0.1_   accept_a0.1_t0.2         topk_calls  topk_true_fom_rat
+coarse_r2         0.890(0.060)       0.095(0.020)      -0.317(0.035)       0.000(0.000)       0.000(0.000)       0.000(0.000)      10.000(0.000)       0.709(0.086)
+coarse_r3         0.878(0.038)       0.012(0.003)      -0.158(0.006)       0.000(0.000)       0.000(0.000)       0.000(0.000)      10.000(0.000)       0.993(0.004)
+pod_128           0.892(0.055)       1.997(0.749)       2.869(4.383)       0.000(0.000)       0.000(0.000)       0.156(0.012)      10.000(0.000)       0.984(0.010)
+pod_16            0.878(0.035)       3.285(0.464)       6.648(2.884)       0.000(0.000)       0.000(0.000)       0.000(0.000)      10.000(0.000)       0.539(0.105)
+pod_64            0.934(0.037)       3.489(1.700)      11.265(8.722)       0.000(0.000)       0.000(0.000)       0.023(0.009)      10.000(0.000)       0.966(0.025)
+
+Acceptance rate / false-accept rate at alpha = 0.1 (mean over repeats)
+  coarse_r2 tau 0.02: 0.000/0.000  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  coarse_r3 tau 0.02: 0.000/0.000  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  pod_128   tau 0.02: 0.000/0.000  tau 0.05: 0.000/0.000  tau 0.1: 0.007/0.002  tau 0.2: 0.156/0.009
+  pod_16    tau 0.02: 0.000/0.000  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  pod_64    tau 0.02: 0.000/0.000  tau 0.05: 0.000/0.000  tau 0.1: 0.000/0.000  tau 0.2: 0.023/0.003
+
+Coverage by r bin (alpha = 0.1, mean over repeats)
+  coarse_r2 [0.2,0.3]: 0.741  [0.3,0.4]: 0.879  [0.4,0.5]: 0.979  [0.5,0.6]: 0.995
+  coarse_r3 [0.2,0.3]: 0.790  [0.3,0.4]: 0.886  [0.4,0.5]: 0.965  [0.5,0.6]: 0.994
+  pod_128   [0.2,0.3]: 0.987  [0.3,0.4]: 0.928  [0.4,0.5]: 0.869  [0.5,0.6]: 0.820
+  pod_16    [0.2,0.3]: 1.000  [0.3,0.4]: 0.994  [0.4,0.5]: 0.883  [0.5,0.6]: 0.710
+  pod_64    [0.2,0.3]: 0.977  [0.3,0.4]: 0.938  [0.4,0.5]: 0.871  [0.5,0.6]: 0.842
+
+Timing, median per instance (ms): {'full_solve_ms': np.float64(3.09), 'eta_D_ms': np.float64(0.09), 'predict_coarse_r2_ms': np.float64(3.28), 'predict_coarse_r3_ms': np.float64(10.08), 'predict_pod_16_ms': np.float64(1.96), 'predict_pod_64_ms': np.float64(2.41), 'predict_pod_128_ms': np.float64(3.67)}
+
+Verdicts:
+  coarse_r2: DOES NOT TRACK (Spearman -0.328, random coverage 0.898, selected coverage 0.804)
+  coarse_r3: DOES NOT TRACK (Spearman -0.155, random coverage 0.909, selected coverage 0.832)
+  pod_128: NEEDS RECALIBRATION (Spearman 0.933, random coverage 0.901, selected coverage 0.938)
+  pod_16: NEEDS RECALIBRATION (Spearman 0.922, random coverage 0.897, selected coverage 0.792)
+  pod_64: NEEDS RECALIBRATION (Spearman 0.921, random coverage 0.907, selected coverage 0.964)
+
+wrote results/verification_20261004_001202.csv

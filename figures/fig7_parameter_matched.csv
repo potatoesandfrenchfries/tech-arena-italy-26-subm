@@ -1,0 +1,7 @@
+model,training_instances,median_field_error
+"encoder, 78 dim (24,000 parameters)",100,0.2130
+"encoder, 78 dim (24,000 parameters)",400,0.1414
+"FNO (20,452 parameters)",100,0.3550
+"FNO (20,452 parameters)",400,0.2239
+"FNO (1,188,868 parameters)",100,0.2353
+"FNO (1,188,868 parameters)",400,0.1480

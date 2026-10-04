@@ -1,0 +1,41 @@
+training_instances,model,unknowns,median_field_error
+100,"encoder, 36 dim",1504,0.2420
+100,"encoder, 36 dim",6080,0.6913
+100,"encoder, 36 dim",24448,0.8224
+100,"encoder, 36 dim",98048,0.8964
+100,"encoder, 78 dim",1504,0.2127
+100,"encoder, 78 dim",6080,0.5912
+100,"encoder, 78 dim",24448,0.7200
+100,"encoder, 78 dim",98048,0.8139
+100,"FNO, 1.19M parameters",1504,0.2378
+100,"FNO, 1.19M parameters",6080,0.2451
+100,"FNO, 1.19M parameters",24448,0.2507
+100,"FNO, 1.19M parameters",98048,0.2505
+100,"FNO, 20k parameters",1504,0.3546
+100,"FNO, 20k parameters",6080,0.3598
+100,"FNO, 20k parameters",24448,0.3612
+100,"FNO, 20k parameters",98048,0.3614
+100,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",1504,0.6087
+100,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",6080,0.6663
+100,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",24448,0.7293
+100,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",98048,1.0020
+400,"encoder, 36 dim",1504,0.1798
+400,"encoder, 36 dim",6080,0.6379
+400,"encoder, 36 dim",24448,0.7813
+400,"encoder, 36 dim",98048,0.8702
+400,"encoder, 78 dim",1504,0.1429
+400,"encoder, 78 dim",6080,0.5689
+400,"encoder, 78 dim",24448,0.7054
+400,"encoder, 78 dim",98048,0.8040
+400,"FNO, 1.19M parameters",1504,0.1443
+400,"FNO, 1.19M parameters",6080,0.1664
+400,"FNO, 1.19M parameters",24448,0.1728
+400,"FNO, 1.19M parameters",98048,0.1701
+400,"FNO, 20k parameters",1504,0.2237
+400,"FNO, 20k parameters",6080,0.2301
+400,"FNO, 20k parameters",24448,0.2361
+400,"FNO, 20k parameters",98048,0.2358
+400,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",1504,0.5387
+400,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",6080,0.6017
+400,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",24448,0.6440
+400,"mesh-free encoder, 36 dim (refine 7: 2 repeats)",98048,0.8080

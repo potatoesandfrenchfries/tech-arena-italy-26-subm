@@ -1,0 +1,10 @@
+true lowest eigenvalues [ 7.604  7.604 18.83  28.715], half-width 0.380
+
+1. Gate 1e training breakdown, n = 12, w = 10
+  start rbf-0: final objective 0.951 = gal 0.861 + proj 0.012 + 10 x spec 0.0078; lowest reduced eigenvalues [8.278, 8.281, 21.304, 29.881, 52.444, 58.582]
+  start smooth-0: final objective 0.970 = gal 0.865 + proj 0.016 + 10 x spec 0.0089; lowest reduced eigenvalues [8.284, 8.344, 21.386, 30.467, 48.357, 70.411]
+
+2. Post hoc Hodge split of the Gate 1c space (w = 10, n = 16)
+  before (Gate 1c space, no split): in-band eigenvalues [7.585, 7.652]
+  after the split: in-band eigenvalues [8.277], lowest 4 [8.277, 12.259, 31.448, 41.296]
+  after the split: held-out gal mean 0.909 max 1.567 | proj max 0.015 | energy max 2.867

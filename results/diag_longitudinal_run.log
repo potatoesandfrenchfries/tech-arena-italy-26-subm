@@ -1,0 +1,9 @@
+curl-free dimension (interior nodes): 481
+share of ||e_ref||^2 that is curl-free (exact):
+  omega^2 = 6.500: 0.181
+  omega^2 = 7.594: 0.017
+  omega^2 = 9.000: 0.157
+best approximation of the curl-free part by gradients of coarse hats (relative M-norm error):
+  level 1:   5 functions, error 0.833
+  level 2:  25 functions, error 0.553
+  level 3: 113 functions, error 0.344

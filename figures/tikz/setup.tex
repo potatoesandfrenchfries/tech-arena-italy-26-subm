@@ -1,0 +1,43 @@
+% Slide 2: the problem family. PEC unit square, dielectric disc, Gaussian current source.
+\documentclass[border=8pt]{standalone}
+\input{preamble}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % cavity (unit square drawn at 7 cm)
+  \def\L{7}
+  \fill[surface] (0,0) rectangle (\L,\L);
+  \draw[line width=2.4pt, color=ink] (0,0) rectangle (\L,\L);
+  \foreach \i in {0,...,13}{
+    \draw[color=muted, line width=0.6pt] (\i*0.5,0) -- ++(-0.22,-0.22);
+    \draw[color=muted, line width=0.6pt] (\i*0.5+0.5,\L) -- ++(0.22,0.22);
+  }
+  \node[tag, anchor=north] at (\L/2,-0.4) {PEC wall: tangential $E=0$};
+
+  % dielectric disc
+  \def\cx{4.3} \def\cy{4.6} \def\rr{1.15}
+  \draw[cblue, fill=cblue!18, line width=1pt] (\cx,\cy) circle (\rr);
+  \node[font=\footnotesize] at (\cx-0.5,\cy+0.3) {$\varepsilon_r$};
+  \draw[arr, shorten >=1pt] (\cx,\cy) -- ++(-35:\rr);
+  \node[tag, anchor=north] at (\cx,\cy-\rr-0.08) {radius 0.10 to 0.25};
+  \node[tag, anchor=south] at (\cx,\cy+\rr+0.08) {random position and contrast};
+
+  % Gaussian current source
+  \def\sx{1.9} \def\sy{1.8}
+  \foreach \s/\o in {0.9/12, 0.6/22, 0.3/40}{
+    \draw[camber, fill=camber!\o, line width=0.7pt] (\sx,\sy) circle (\s);
+  }
+  \draw[arr, color=ink, line width=1.4pt] (\sx-0.55,\sy-0.35) -- (\sx+0.6,\sy+0.4);
+  \node[tag, anchor=north] at (\sx,\sy-1.0) {Gaussian current $J$\\random position and direction};
+
+  % right-hand panel
+  \node[anchor=west, align=left, font=\footnotesize, text width=7.2cm] at (8.6,\L-1.0) {%
+    \textbf{Time-harmonic Maxwell}, in-plane $E$\\[3pt]
+    $(K-\omega^2 M)\,e=f$\\[1pt]
+    \tg{lowest-order N\'ed\'elec edge elements,\\1,504 interior edges at the working mesh}\\[10pt]
+    \textbf{Frequency (sub-resonant)}\\[3pt]
+    $\omega^2=r\,\lambda_1\,(1+0.05\,i)$,\quad $r\sim U[0.2,\,0.6]$\\[1pt]
+    \tg{$\lambda_1$: first eigenvalue of that instance;\\resonance is out of scope}\\[10pt]
+    \textbf{Reference}\\[3pt]
+    fine-mesh solution, up to 393k unknowns for the cost and transfer tests};
+\end{tikzpicture}
+\end{document}

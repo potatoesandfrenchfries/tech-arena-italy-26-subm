@@ -1,0 +1,68 @@
+device cuda; encoder width 24, 12 bumps, 1500 steps
+[0] trained 6 models (418s); parameters {'g12': 24000, 'fno': 1188868, 'fnosmall': 20452}
+  [0] stage A done (481s)
+  [0] refine 4: g12_n100 0.208, fno_n100 0.236, fnosmall_n100 0.354, g12_n400 0.135, fno_n400 0.144, fnosmall_n400 0.218 (486s)
+  [0] refine 5: g12_n100 0.594, fno_n100 0.242, fnosmall_n100 0.360, g12_n400 0.573, fno_n400 0.170, fnosmall_n400 0.224 (497s)
+  [0] refine 6: g12_n100 0.726, fno_n100 0.247, fnosmall_n100 0.360, g12_n400 0.710, fno_n400 0.173, fnosmall_n400 0.230 (538s)
+  [0] refine 7: g12_n100 0.821, fno_n100 0.250, fnosmall_n100 0.360, g12_n400 0.810, fno_n400 0.170, fnosmall_n400 0.229 (678s)
+wrote results/study8_transfer_partial_20261004_134836.csv
+[1] trained 6 models (414s); parameters {'g12': 24000, 'fno': 1188868, 'fnosmall': 20452}
+  [1] stage A done (474s)
+  [1] refine 4: g12_n100 0.219, fno_n100 0.233, fnosmall_n100 0.364, g12_n400 0.153, fno_n400 0.143, fnosmall_n400 0.230 (479s)
+  [1] refine 5: g12_n100 0.573, fno_n100 0.241, fnosmall_n100 0.372, g12_n400 0.583, fno_n400 0.165, fnosmall_n400 0.237 (490s)
+  [1] refine 6: g12_n100 0.694, fno_n100 0.249, fnosmall_n100 0.375, g12_n400 0.716, fno_n400 0.172, fnosmall_n400 0.243 (532s)
+  [1] refine 7: g12_n100 0.790, fno_n100 0.247, fnosmall_n100 0.373, g12_n400 0.807, fno_n400 0.169, fnosmall_n400 0.244 (672s)
+wrote results/study8_transfer_partial_20261004_135948.csv
+[2] trained 6 models (405s); parameters {'g12': 24000, 'fno': 1188868, 'fnosmall': 20452}
+  [2] stage A done (466s)
+  [2] refine 4: g12_n100 0.212, fno_n100 0.244, fnosmall_n100 0.346, g12_n400 0.141, fno_n400 0.146, fnosmall_n400 0.224 (471s)
+  [2] refine 5: g12_n100 0.607, fno_n100 0.252, fnosmall_n100 0.347, g12_n400 0.551, fno_n400 0.165, fnosmall_n400 0.229 (482s)
+  [2] refine 6: g12_n100 0.740, fno_n100 0.257, fnosmall_n100 0.349, g12_n400 0.690, fno_n400 0.173, fnosmall_n400 0.235 (523s)
+  [2] refine 7: g12_n100 0.831, fno_n100 0.255, fnosmall_n100 0.351, g12_n400 0.794, fno_n400 0.172, fnosmall_n400 0.234 (671s)
+wrote results/study8_transfer_partial_20261004_141059.csv
+
+Parameters: {'g12': 24000, 'fno': 1188868, 'fnosmall': 20452}
+
+Stage A, refine 4, medians over the test set (mean over repeats)
+model                  rel_err   power_balance   pec_violation      gauss_fine        residual
+g12_n100             2.130e-01       5.375e-15       0.000e+00       3.188e-01       3.234e+00
+fno_n100             2.353e-01       2.296e+00       3.914e-02       2.876e-01       3.052e+01
+fnosmall_n100        3.550e-01       1.056e+00       6.300e-02       3.456e-01       1.943e+01
+g12_n400             1.414e-01       4.892e-15       0.000e+00       2.180e-01       3.082e+00
+fno_n400             1.480e-01       2.307e+00       2.361e-02       2.028e-01       3.025e+01
+fnosmall_n400        2.239e-01       1.338e+00       4.027e-02       2.823e-01       2.083e+01
+
+Parameter-matched comparison (G12 median field error over the small FNO's; LEADS if at most 0.90 at both sizes, TRAILS if at least 1.10 at either)
+  against the small FNO (20452 parameters): LEADS (ratios 100: 0.60, 400: 0.63)
+  against the large FNO (1188868 parameters), reported: ratios 100: 0.91, 400: 0.95
+
+Certificate verdicts
+  fno_n100: DOES NOT TRACK (Spearman 0.551, random coverage 0.893, selected coverage 0.977)
+  fno_n400: DOES NOT TRACK (Spearman 0.602, random coverage 0.895, selected coverage 0.977)
+  fnosmall_n100: DOES NOT TRACK (Spearman 0.278, random coverage 0.886, selected coverage 0.967)
+  fnosmall_n400: DOES NOT TRACK (Spearman 0.310, random coverage 0.877, selected coverage 0.973)
+  g12_n100: DOES NOT TRACK (Spearman 0.402, random coverage 0.888, selected coverage 0.900)
+  g12_n400: DOES NOT TRACK (Spearman 0.491, random coverage 0.893, selected coverage 0.887)
+
+Acceptance / false-accept at alpha = 0.1, tau = 0.10 and 0.20
+  g12_n100      tau 0.1: 0.000/0.000  tau 0.2: 0.005/0.003
+  fno_n100      tau 0.1: 0.000/0.000  tau 0.2: 0.066/0.021
+  fnosmall_n100 tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  g12_n400      tau 0.1: 0.000/0.000  tau 0.2: 0.609/0.027
+  fno_n400      tau 0.1: 0.018/0.010  tau 0.2: 0.383/0.010
+  fnosmall_n400 tau 0.1: 0.000/0.000  tau 0.2: 0.036/0.015
+n_train=100: matched instances per repeat [739, 720, 689]; median gauss_fine G12/FNO [(0.2845, 0.2488), (0.2898, 0.2382), (0.2812, 0.2526)]
+n_train=400: matched instances per repeat [817, 843, 827]; median gauss_fine G12/FNO [(0.2208, 0.2171), (0.2476, 0.2138), (0.2251, 0.2199)]
+Consistency verdict (G12 against the large FNO): BY CONSTRUCTION ONLY
+
+Stage B, median field error by mesh (mean over repeats) and ratio to refine 4
+  g12_n100      r4: 0.213  r5: 0.591 (2.78)  r6: 0.720 (3.38)  r7: 0.814 (3.83) | holds to refine 4
+  fno_n100      r4: 0.238  r5: 0.245 (1.03)  r6: 0.251 (1.05)  r7: 0.250 (1.05) | holds to refine 7
+  fnosmall_n100 r4: 0.355  r5: 0.360 (1.01)  r6: 0.361 (1.02)  r7: 0.361 (1.02) | holds to refine 7
+  g12_n400      r4: 0.143  r5: 0.569 (3.98)  r6: 0.705 (4.93)  r7: 0.804 (5.62) | holds to refine 4
+  fno_n400      r4: 0.144  r5: 0.166 (1.15)  r6: 0.173 (1.20)  r7: 0.170 (1.18) | holds to refine 7
+  fnosmall_n400 r4: 0.224  r5: 0.230 (1.03)  r6: 0.236 (1.06)  r7: 0.236 (1.05) | holds to refine 7
+wrote results/study8_certificate_20261004_141059.csv
+wrote results/study8_consistency_20261004_141059.csv
+wrote results/study8_transfer_20261004_141059.csv
+wrote results/study8_matched_20261004_141059.csv

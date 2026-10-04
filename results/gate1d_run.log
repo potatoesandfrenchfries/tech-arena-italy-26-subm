@@ -1,0 +1,16 @@
+w = 10.0, target eigenvalues [ 7.604  7.604 18.83  28.715], budget dim <= 150
+
+level 1: 5 added gradients
+  n= 4 dim=  15 held: gal mean 0.933 max 0.938 proj max 0.431 energy max 0.899 | train gal mean 0.932 | modes at true: 2, ghosts in band: 0, band [7.611, 7.622] | fixed=True conv=True (19s)
+  n= 8 dim=  41 held: gal mean 0.353 max 0.397 proj max 0.082 energy max 0.152 | train gal mean 0.353 | modes at true: 2, ghosts in band: 0, band [7.503, 7.714] | fixed=True conv=False (37s)
+  n=12 dim=  83 held: gal mean 0.295 max 0.320 proj max 0.033 energy max 0.138 | train gal mean 0.292 | modes at true: 2, ghosts in band: 0, band [7.555, 7.663] | fixed=True conv=True (53s)
+  n=16 dim= 141 held: gal mean 0.285 max 0.301 proj max 0.027 energy max 0.135 | train gal mean 0.283 | modes at true: 2, ghosts in band: 0, band [7.596, 7.642] | fixed=True conv=True (78s)
+
+level 2: 25 added gradients
+  n= 4 dim=  35 held: gal mean 0.904 max 0.920 proj max 0.344 energy max 0.851 | train gal mean 0.900 | modes at true: 2, ghosts in band: 0, band [7.599, 7.618] | fixed=True conv=True (65s)
+  n= 8 dim=  61 held: gal mean 0.353 max 0.387 proj max 0.084 energy max 0.171 | train gal mean 0.353 | modes at true: 2, ghosts in band: 0, band [7.525, 7.716] | fixed=True conv=False (76s)
+  n=12 dim= 103 held: gal mean 0.295 max 0.329 proj max 0.029 energy max 0.192 | train gal mean 0.291 | modes at true: 2, ghosts in band: 0, band [7.582, 7.679] | fixed=True conv=True (73s)
+  n=16 dim= 161 [over budget, excluded from verdict] held: gal mean 0.286 max 0.303 proj max 0.027 energy max 0.149 | train gal mean 0.283 | modes at true: 2, ghosts in band: 0, band [7.602, 7.645] | fixed=True conv=True (111s)
+
+Verdict: NO IMPROVEMENT: best affordable held-out gal mean 0.285 (level=1, n=16)
+wrote results/gate1d_20261003_231813.csv

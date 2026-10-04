@@ -1,0 +1,49 @@
+train omega^2 [6.5   6.812 7.125 7.438 7.75  8.062 8.375 8.688 9.   ]
+held-out [6.656 6.969 7.281 7.594 7.906 8.219 8.531 8.844]
+budget dim <= 150
+
+Comparators
+  coarse      -        n=  1 dim=  20 held: gal max 1.387 proj max 0.458 energy max 2.110 | train gal mean 0.846 | worst omega^2 6.97 conv=True
+  coarse      -        n=  2 dim=  88 held: gal max 0.898 proj max 0.305 energy max 1.217 | train gal mean 0.535 | worst omega^2 7.28 conv=True
+  coarse      -        n=  3 dim= 368 held: gal max 0.268 proj max 0.178 energy max 0.240 | train gal mean 0.208 | worst omega^2 7.59 conv=True
+  modal+grad  -        n=  2 dim= 115 held: gal max 0.160 proj max 0.160 energy max 0.026 | train gal mean 0.112 | worst omega^2 8.84 conv=True
+  modal+grad  -        n= 10 dim= 123 held: gal max 0.128 proj max 0.128 energy max 0.016 | train gal mean 0.094 | worst omega^2 6.66 conv=True
+
+Loss: galerkin
+  oracle      galerkin n=  4 dim=  10 held: gal max 0.991 proj max 0.959 energy max 0.983 | train gal mean 0.957 | worst omega^2 7.59 conv=True
+    (7s)
+  oracle      galerkin n=  8 dim=  36 held: gal max 0.993 proj max 0.918 energy max 0.986 | train gal mean 0.965 | worst omega^2 7.59 conv=True
+    (15s)
+  oracle      galerkin n= 12 dim=  78 held: gal max 1.007 proj max 0.699 energy max 0.981 | train gal mean 0.942 | worst omega^2 7.28 conv=True
+    (19s)
+  oracle      galerkin n= 16 dim= 136 held: gal max 1.061 proj max 0.685 energy max 0.975 | train gal mean 0.940 | worst omega^2 6.66 conv=True
+    (27s)
+  oracle      galerkin n= 24 dim= 300 held: gal max 0.287 proj max 0.256 energy max 0.123 | train gal mean 0.272 | worst omega^2 7.59 conv=True
+    (58s)
+
+Loss: proj
+  oracle      proj     n=  4 dim=  10 held: gal max 1.313 proj max 0.111 energy max 0.984 | train gal mean 1.056 | worst omega^2 8.84 conv=False
+    (7s)
+  oracle      proj     n=  8 dim=  36 held: gal max 1.964 proj max 0.025 energy max 4.111 | train gal mean 1.082 | worst omega^2 8.53 conv=True
+    (30s)
+  oracle      proj     n= 12 dim=  78 held: gal max 1.685 proj max 0.018 energy max 3.508 | train gal mean 0.953 | worst omega^2 8.22 conv=True
+    (26s)
+  oracle      proj     n= 16 dim= 136 held: gal max 1.661 proj max 0.015 energy max 3.354 | train gal mean 0.927 | worst omega^2 8.22 conv=True
+    (33s)
+  oracle      proj     n= 24 dim= 300 held: gal max 1.630 proj max 0.014 energy max 3.164 | train gal mean 0.906 | worst omega^2 8.22 conv=True
+    (56s)
+
+Loss: mixed
+  oracle      mixed    n=  4 dim=  10 held: gal max 1.003 proj max 0.103 energy max 0.983 | train gal mean 0.967 | worst omega^2 8.22 conv=True
+    (10s)
+  oracle      mixed    n=  8 dim=  36 held: gal max 1.011 proj max 0.050 energy max 0.984 | train gal mean 0.971 | worst omega^2 8.53 conv=True
+    (42s)
+  oracle      mixed    n= 12 dim=  78 held: gal max 0.997 proj max 0.036 energy max 0.982 | train gal mean 0.951 | worst omega^2 7.59 conv=True
+    (40s)
+  oracle      mixed    n= 16 dim= 136 held: gal max 1.165 proj max 0.032 energy max 0.959 | train gal mean 0.934 | worst omega^2 6.66 conv=True
+    (41s)
+  oracle      mixed    n= 24 dim= 300 held: gal max 0.297 proj max 0.025 energy max 0.124 | train gal mean 0.281 | worst omega^2 7.59 conv=True
+    (93s)
+
+Verdict: STABILITY-LIMITED (loss=proj, n=16: held-out proj 0.015, galerkin 1.66)
+wrote results/gate1b_20261003_222421.csv

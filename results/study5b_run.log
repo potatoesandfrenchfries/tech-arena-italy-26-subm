@@ -1,0 +1,11 @@
+device cuda
+FNO ready: 1188868 parameters
+refine 4: N = 1504: full 2.9 ms | FNO gpu 1.7 (inputs 0.05, forward 1.59, map 0.02; cpu forward 5.9) | encoder 3.2 | cheapest single: fno_gpu | encoder/FNO 1.88 | per extra frequency: encoder 0.04 ms, FNO 1.66 ms | max load 0.39 (0s)
+refine 5: N = 6080: full 15.2 ms | FNO gpu 2.4 (inputs 0.04, forward 2.24, map 0.05; cpu forward 5.1) | encoder 12.1 | cheapest single: fno_gpu | encoder/FNO 5.03 | per extra frequency: encoder 0.09 ms, FNO 2.33 ms | max load 0.39 (1s)
+refine 6: N = 24448: full 88.5 ms | FNO gpu 2.2 (inputs 0.05, forward 1.45, map 0.27; cpu forward 6.2) | encoder 48.0 | cheapest single: fno_gpu | encoder/FNO 21.88 | per extra frequency: encoder 0.39 ms, FNO 1.77 ms | max load 0.44 (5s)
+refine 7: N = 98048: full 758.3 ms | FNO gpu 6.1 (inputs 0.05, forward 1.91, map 1.56; cpu forward 5.5) | encoder 267.0 | cheapest single: fno_gpu | encoder/FNO 44.08 | per extra frequency: encoder 2.93 ms, FNO 3.52 ms | max load 0.57 (13s)
+refine 8: N = 392704: full 6623.1 ms | FNO gpu 26.5 (inputs 0.05, forward 1.82, map 8.27; cpu forward 5.0) | encoder 1437.3 | cheapest single: fno_gpu | encoder/FNO 54.24 | per extra frequency: encoder 12.36 ms, FNO 10.14 ms | max load 0.86 (68s)
+
+Cheapest per single query by mesh: refine 4: fno_gpu, refine 5: fno_gpu, refine 6: fno_gpu, refine 7: fno_gpu, refine 8: fno_gpu
+Prediction recorded in advance: the FNO is cheaper than the encoder per single query at the large meshes -> CONSISTENT
+wrote results/study5b_20261004_042834.csv

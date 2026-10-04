@@ -1,0 +1,42 @@
+/home/kanishhr/GitHub/huawei-tech-arena-italy-2026/huawei-tech-arena-italy-2026/compat_galerkin/lift.py:18: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/Context.cpp:848.)
+  t = torch.sparse_coo_tensor(idx, torch.as_tensor(coo.data, dtype=DTYPE), coo.shape).coalesce()
+/home/kanishhr/GitHub/huawei-tech-arena-italy-2026/huawei-tech-arena-italy-2026/compat_galerkin/oracle.py:114: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  hist.append(float(loss))
+interior edges 1504 | budget dim <= 150 | modes [ 7.604 18.83 ]
+{'low': np.float64(3.042), 'near': np.float64(7.756), 'gap': np.float64(13.217)}
+[low] n=  4 dim=  10 rel_err=0.029 proj=0.026 energy=0.007 spread=(0.029,0.120) conv=False (11s)
+[low] n=  6 dim=  21 rel_err=0.027 proj=0.021 energy=0.007 spread=(0.027,0.069) conv=True (16s)
+[low] n=  8 dim=  36 rel_err=0.026 proj=0.020 energy=0.007 spread=(0.026,0.030) conv=False (14s)
+[low] n= 12 dim=  78 rel_err=0.025 proj=0.017 energy=0.007 spread=(0.025,0.031) conv=False (30s)
+[low] n= 16 dim= 136 rel_err=0.024 proj=0.016 energy=0.007 spread=(0.024,0.115) conv=True (49s)
+[low] n= 24 dim= 300 rel_err=0.023 proj=0.012 energy=0.008 spread=(0.023,0.850) conv=True (75s)
+[near] n=  4 dim=  10 rel_err=0.980 proj=0.692 energy=0.976 spread=(0.980,0.982) conv=True (11s)
+[near] n=  6 dim=  21 rel_err=0.980 proj=0.695 energy=0.976 spread=(0.980,0.981) conv=True (13s)
+[near] n=  8 dim=  36 rel_err=0.980 proj=0.657 energy=0.976 spread=(0.980,0.981) conv=True (17s)
+[near] n= 12 dim=  78 rel_err=0.981 proj=0.613 energy=0.977 spread=(0.981,0.989) conv=True (21s)
+[near] n= 16 dim= 136 rel_err=0.981 proj=0.522 energy=0.978 spread=(0.981,0.989) conv=True (43s)
+[near] n= 24 dim= 259 rel_err=0.580 proj=0.442 energy=0.289 spread=(0.580,0.986) conv=True (86s)
+[gap] n=  4 dim=  10 rel_err=0.395 proj=0.335 energy=0.244 spread=(0.395,0.875) conv=False (10s)
+[gap] n=  6 dim=  21 rel_err=0.375 proj=0.300 energy=0.245 spread=(0.375,0.955) conv=False (15s)
+[gap] n=  8 dim=  36 rel_err=0.068 proj=0.055 energy=0.033 spread=(0.068,0.943) conv=True (15s)
+[gap] n= 12 dim=  78 rel_err=0.051 proj=0.035 energy=0.033 spread=(0.051,0.683) conv=False (24s)
+[gap] n= 16 dim= 136 rel_err=0.061 proj=0.041 energy=0.028 spread=(0.061,0.885) conv=False (43s)
+[gap] n= 24 dim= 300 rel_err=0.059 proj=0.031 energy=0.030 spread=(0.059,0.093) conv=True (83s)
+
+Context (non-learned compatible spaces, same instance):
+  [low] coarse_r1 dim=20 rel_err=0.812 energy_err=0.648
+  [low] coarse_r2 dim=88 rel_err=0.543 energy_err=0.279
+  [low] coarse_r3 dim=368 rel_err=0.328 energy_err=0.112
+  [near] coarse_r1 dim=20 rel_err=0.753 energy_err=0.764
+  [near] coarse_r2 dim=88 rel_err=0.559 energy_err=0.538
+  [near] coarse_r3 dim=368 rel_err=0.245 energy_err=0.212
+  [gap] coarse_r1 dim=20 rel_err=0.682 energy_err=0.519
+  [gap] coarse_r2 dim=88 rel_err=0.423 energy_err=0.207
+  [gap] coarse_r3 dim=368 rel_err=0.264 energy_err=0.091
+
+Verdicts:
+  low: PASS at n=4
+  near: INCONCLUSIVE (still improving at the largest n)
+  gap: PASS at n=8
+wrote results/gate1_20261003_215216.csv

@@ -1,0 +1,46 @@
+Stage 1: hyperparameter selection on validation data
+  select width=12 steps= 500 n_train= 25: train 0.143 | val median field 0.549 energy 0.233 (39s)
+  select width=12 steps= 500 n_train=100: train 0.258 | val median field 0.329 energy 0.107 (44s)
+  select width=12 steps=1000 n_train= 25: train 0.107 | val median field 0.544 energy 0.234 (64s)
+  select width=12 steps=1000 n_train=100: train 0.198 | val median field 0.293 energy 0.087 (78s)
+  select width=24 steps= 500 n_train= 25: train 0.101 | val median field 0.504 energy 0.201 (37s)
+  select width=24 steps= 500 n_train=100: train 0.185 | val median field 0.273 energy 0.081 (57s)
+  select width=24 steps=1000 n_train= 25: train 0.078 | val median field 0.497 energy 0.190 (94s)
+  select width=24 steps=1000 n_train=100: train 0.136 | val median field 0.247 energy 0.072 (78s)
+  mean validation median field error by configuration: (12, 500): 0.439, (12, 1000): 0.419, (24, 500): 0.389, (24, 1000): 0.372
+  selected (width, steps) = (24, 1000)
+wrote results/gate2_selection_20261004_022655.csv
+
+Stage 2: test
+  [0] n_train= 25 encoder: median field 0.478 mean 0.549 | median energy 0.173 | energy<5%: 0.08 field<10%: 0.00 | train 0.067 (124s)
+  [0] n_train= 50 encoder: median field 0.338 mean 0.360 | median energy 0.099 | energy<5%: 0.13 field<10%: 0.00 | train 0.100 (123s)
+  [0] n_train=100 encoder: median field 0.238 mean 0.259 | median energy 0.079 | energy<5%: 0.24 field<10%: 0.00 | train 0.128 (139s)
+  [0] n_train=200 encoder: median field 0.203 mean 0.209 | median energy 0.069 | energy<5%: 0.32 field<10%: 0.00 | train 0.152 (77s)
+  [0] n_train=400 encoder: median field 0.180 mean 0.188 | median energy 0.060 | energy<5%: 0.40 field<10%: 0.02 | train 0.160 (89s)
+  one encoder predict 64.7 ms against one fine solve 2.6 ms (median of 30)
+repeat 0: 678s
+  [1] n_train= 25 encoder: median field 0.484 mean 0.525 | median energy 0.171 | energy<5%: 0.09 field<10%: 0.00 | train 0.072 (133s)
+  [1] n_train= 50 encoder: median field 0.366 mean 0.395 | median energy 0.114 | energy<5%: 0.10 field<10%: 0.00 | train 0.103 (82s)
+  [1] n_train=100 encoder: median field 0.243 mean 0.257 | median energy 0.077 | energy<5%: 0.23 field<10%: 0.00 | train 0.134 (80s)
+  [1] n_train=200 encoder: median field 0.196 mean 0.203 | median energy 0.057 | energy<5%: 0.41 field<10%: 0.00 | train 0.149 (270s)
+  [1] n_train=400 encoder: median field 0.174 mean 0.181 | median energy 0.054 | energy<5%: 0.47 field<10%: 0.01 | train 0.158 (262s)
+repeat 1: 959s
+  [2] n_train= 25 encoder: median field 0.467 mean 0.488 | median energy 0.184 | energy<5%: 0.06 field<10%: 0.00 | train 0.074 (209s)
+  [2] n_train= 50 encoder: median field 0.352 mean 0.375 | median energy 0.113 | energy<5%: 0.11 field<10%: 0.00 | train 0.116 (282s)
+  [2] n_train=100 encoder: median field 0.249 mean 0.258 | median energy 0.079 | energy<5%: 0.22 field<10%: 0.00 | train 0.131 (211s)
+  [2] n_train=200 encoder: median field 0.212 mean 0.220 | median energy 0.069 | energy<5%: 0.31 field<10%: 0.01 | train 0.154 (203s)
+  [2] n_train=400 encoder: median field 0.185 mean 0.195 | median energy 0.060 | energy<5%: 0.36 field<10%: 0.00 | train 0.158 (252s)
+repeat 2: 1302s
+
+Mean over repeats, median field error / median energy error:
+  n_train= 25: encoder 0.476/0.176 (10.8x oracle) | baselines: fno 0.448, pod36 0.634, pod136 0.665
+  n_train= 50: encoder 0.352/0.109 (8.0x oracle) | baselines: fno 0.320, pod36 0.556, pod136 0.378
+  n_train=100: encoder 0.243/0.078 (5.5x oracle) | baselines: fno 0.241, pod36 0.461, pod136 0.265
+  n_train=200: encoder 0.204/0.065 (4.6x oracle) | baselines: fno 0.188, pod36 0.276, pod136 0.285
+  n_train=400: encoder 0.180/0.058 (4.1x oracle) | baselines: fno 0.150, pod36 0.248, pod136 0.273
+
+Criterion A (n_train=25): encoder 0.476 against half of the smaller POD value 0.317; at most half of the repeat's POD in 0 of 3 repeats -> NOT MET
+Criterion B (dimension 36 at most POD-136's error at some size >= 50): sizes [50, 100, 200, 400] -> MET
+Verdict: PASS
+Smallest size with median field error below 10%: none
+wrote results/gate2_20261004_031553.csv

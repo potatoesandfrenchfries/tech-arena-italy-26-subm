@@ -1,0 +1,4 @@
+config,err_kernel,err_pair,err_other,ref_kernel,ref_pair,ref_other
+"Galerkin error, w = 10, n = 16",0.07256,0.00821,0.00162,,,
+"Galerkin error, w = 0.1, n = 16",0.07204,0.00679,0.00131,,,
+true solution,,,,0.07718,0.91875,0.00407

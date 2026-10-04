@@ -1,0 +1,19 @@
+[project]
+name = "huawei-tech-arena-italy-2026"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "scikit-fem>=12.0.2",
+    "scipy>=1.18.1",
+    "torch>=2.14.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

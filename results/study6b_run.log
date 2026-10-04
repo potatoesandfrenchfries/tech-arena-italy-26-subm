@@ -1,0 +1,78 @@
+device cuda
+refine 4: 1504 unknowns, 200 transfer instances (0s)
+refine 5: 6080 unknowns, 200 transfer instances (0s)
+refine 6: 24448 unknowns, 200 transfer instances (0s)
+refine 7: 98048 unknowns, 200 transfer instances (0s)
+[0] trained 2 FNOs (110s)
+  [0] stage 1 done (253s)
+  [0] refine 4: fno_n100 0.236, fno_n400 0.144, c1_r2_n100 0.700, c1_r3_n100 0.338, c1_r2_n400 0.750, c1_r3_n400 0.348, coarse_r2 0.565, coarse_r3 0.306 (266s)
+  [0] refine 5: fno_n100 0.242, fno_n400 0.170, c1_r2_n100 0.657, c1_r3_n100 0.366, c1_r2_n400 0.627, c1_r3_n400 0.354, coarse_r2 0.581, coarse_r3 0.346 (309s)
+  [0] refine 6: fno_n100 0.247, fno_n400 0.173, c1_r2_n100 0.642, c1_r3_n100 0.370, c1_r2_n400 0.642, c1_r3_n400 0.371, coarse_r2 0.586, coarse_r3 0.358 (489s)
+  [0] refine 7: fno_n100 0.250, fno_n400 0.170, c1_r2_n100 0.624, c1_r3_n100 0.368, c1_r2_n400 0.624, c1_r3_n400 0.370, coarse_r2 0.588, coarse_r3 0.361 (1153s)
+wrote results/study6b_transfer_partial_20261004_114909.csv
+[1] trained 2 FNOs (105s)
+  [1] stage 1 done (210s)
+  [1] refine 4: fno_n100 0.233, fno_n400 0.143, c1_r2_n100 0.694, c1_r3_n100 0.338, c1_r2_n400 0.739, c1_r3_n400 0.347 (218s)
+  [1] refine 5: fno_n100 0.241, fno_n400 0.165, c1_r2_n100 0.644, c1_r3_n100 0.362, c1_r2_n400 0.628, c1_r3_n400 0.357 (249s)
+  [1] refine 6: fno_n100 0.249, fno_n400 0.172, c1_r2_n100 0.636, c1_r3_n100 0.369, c1_r2_n400 0.647, c1_r3_n400 0.373 (378s)
+  [1] refine 7: fno_n100 0.247, fno_n400 0.169, c1_r2_n100 0.616, c1_r3_n100 0.368, c1_r2_n400 0.626, c1_r3_n400 0.368 (851s)
+wrote results/study6b_transfer_partial_20261004_120321.csv
+[2] trained 2 FNOs (105s)
+  [2] stage 1 done (216s)
+  [2] refine 4: fno_n100 0.244, fno_n400 0.146, c1_r2_n100 0.696, c1_r3_n100 0.339, c1_r2_n400 0.742, c1_r3_n400 0.346 (225s)
+  [2] refine 5: fno_n100 0.252, fno_n400 0.165, c1_r2_n100 0.649, c1_r3_n100 0.364, c1_r2_n400 0.628, c1_r3_n400 0.356 (253s)
+  [2] refine 6: fno_n100 0.257, fno_n400 0.173, c1_r2_n100 0.637, c1_r3_n100 0.372, c1_r2_n400 0.648, c1_r3_n400 0.373 (382s)
+  [2] refine 7: fno_n100 0.255, fno_n400 0.172, c1_r2_n100 0.619, c1_r3_n100 0.371, c1_r2_n400 0.625, c1_r3_n400 0.369 (859s)
+wrote results/study6b_transfer_partial_20261004_121739.csv
+
+Stage 1, refine 4, median over the test set (mean over repeats)
+model                  rel_err   power_balance   pec_violation      gauss_fine        residual
+fno_n100             2.353e-01       2.296e+00       3.914e-02       2.876e-01       3.052e+01
+c1_r2_n100           6.853e-01       6.422e-15       0.000e+00       6.583e-01       6.821e+00
+c1_r3_n100           3.318e-01       9.974e-15       0.000e+00       5.025e-01       2.248e+00
+fno_n400             1.480e-01       2.307e+00       2.361e-02       2.028e-01       3.025e+01
+c1_r2_n400           7.282e-01       7.486e-15       0.000e+00       6.755e-01       8.560e+00
+c1_r3_n400           3.396e-01       1.036e-14       0.000e+00       5.108e-01       2.631e+00
+coarse_r2            5.628e-01       4.199e-15       0.000e+00       5.923e-01       1.566e+00
+coarse_r3            3.064e-01       8.621e-15       0.000e+00       4.774e-01       9.723e-01
+
+Certificate verdicts
+  c1_r2_n100: NEEDS RECALIBRATION (Spearman 0.871, random coverage 0.896, selected coverage 0.933)
+  c1_r2_n400: NEEDS RECALIBRATION (Spearman 0.915, random coverage 0.890, selected coverage 0.933)
+  c1_r3_n100: DOES NOT TRACK (Spearman 0.538, random coverage 0.897, selected coverage 0.920)
+  c1_r3_n400: DOES NOT TRACK (Spearman 0.559, random coverage 0.893, selected coverage 0.907)
+  coarse_r2: DOES NOT TRACK (Spearman -0.345, random coverage 0.900, selected coverage 0.780)
+  coarse_r3: DOES NOT TRACK (Spearman -0.189, random coverage 0.900, selected coverage 0.830)
+  fno_n100: DOES NOT TRACK (Spearman 0.551, random coverage 0.893, selected coverage 0.977)
+  fno_n400: DOES NOT TRACK (Spearman 0.602, random coverage 0.895, selected coverage 0.977)
+
+Acceptance / false-accept at alpha = 0.1, tau = 0.10 and 0.20
+  fno_n100      tau 0.1: 0.000/0.000  tau 0.2: 0.066/0.021
+  c1_r2_n100    tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  c1_r3_n100    tau 0.1: 0.000/0.000  tau 0.2: 0.003/0.003
+  fno_n400      tau 0.1: 0.018/0.010  tau 0.2: 0.383/0.010
+  c1_r2_n400    tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  c1_r3_n400    tau 0.1: 0.000/0.000  tau 0.2: 0.001/0.001
+  coarse_r2     tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+  coarse_r3     tau 0.1: 0.000/0.000  tau 0.2: 0.000/0.000
+
+Stage 2, median field error by mesh (mean over repeats)
+  fno_n100      refine 4: 0.238  refine 5: 0.245  refine 6: 0.251  refine 7: 0.250
+  fno_n400      refine 4: 0.144  refine 5: 0.166  refine 6: 0.173  refine 7: 0.170
+  c1_r2_n100    refine 4: 0.697  refine 5: 0.650  refine 6: 0.638  refine 7: 0.620
+  c1_r3_n100    refine 4: 0.338  refine 5: 0.364  refine 6: 0.370  refine 7: 0.369
+  c1_r2_n400    refine 4: 0.744  refine 5: 0.628  refine 6: 0.646  refine 7: 0.625
+  c1_r3_n400    refine 4: 0.347  refine 5: 0.356  refine 6: 0.372  refine 7: 0.369
+  coarse_r2     refine 4: 0.565  refine 5: 0.581  refine 6: 0.586  refine 7: 0.588
+  coarse_r3     refine 4: 0.306  refine 5: 0.346  refine 6: 0.358  refine 7: 0.361
+
+Criteria
+  c1_r2_n100: accuracy DEGRADED (2.91 x FNO), consistency RESTORED (power balance 6.4e-15, residual 6.82), certificate: NEEDS RECALIBRATION (Spearman 0.871, random coverage 0.896, selected coverage 0.933), transfer HOLDS (ratios r5: 0.93, r6: 0.92, r7: 0.89)
+  c1_r2_n400: accuracy DEGRADED (4.92 x FNO), consistency RESTORED (power balance 7.5e-15, residual 8.56), certificate: NEEDS RECALIBRATION (Spearman 0.915, random coverage 0.890, selected coverage 0.933), transfer HOLDS (ratios r5: 0.84, r6: 0.87, r7: 0.84)
+  c1_r3_n100: accuracy DEGRADED (1.41 x FNO), consistency RESTORED (power balance 1.0e-14, residual 2.25), certificate: DOES NOT TRACK (Spearman 0.538, random coverage 0.897, selected coverage 0.920), transfer HOLDS (ratios r5: 1.08, r6: 1.09, r7: 1.09)
+  c1_r3_n400: accuracy DEGRADED (2.29 x FNO), consistency RESTORED (power balance 1.0e-14, residual 2.63), certificate: DOES NOT TRACK (Spearman 0.559, random coverage 0.893, selected coverage 0.907), transfer HOLDS (ratios r5: 1.02, r6: 1.07, r7: 1.06)
+
+Overall: FAILS
+wrote results/study6b_certificate_20261004_121739.csv
+wrote results/study6b_consistency_20261004_121739.csv
+wrote results/study6b_transfer_20261004_121739.csv

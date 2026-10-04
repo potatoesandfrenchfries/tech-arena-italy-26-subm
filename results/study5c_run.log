@@ -1,0 +1,17 @@
+encoder width 24, steps 1000
+refine 4: 1504 unknowns, 200 test instances with references (2s)
+refine 5: 6080 unknowns, 200 test instances with references (9s)
+refine 6: 24448 unknowns, 200 test instances with references (62s)
+refine 7: 98048 unknowns, 200 test instances with references (366s)
+[0] trained 2 encoders (131s)
+  [0] refine 4: n=100 nearest 0.237, n=100 linear 0.237, n=400 nearest 0.178, n=400 linear 0.178 (134s)
+  [0] refine 5: n=100 nearest 0.739, n=100 linear 0.661, n=400 nearest 0.643, n=400 linear 0.501 (142s)
+  [0] refine 6: n=100 nearest 0.862, n=100 linear 0.864, n=400 nearest 0.780, n=400 linear 0.652 (176s)
+  [0] refine 7: n=100 nearest 0.926, n=100 linear 0.976, n=400 nearest 0.866, n=400 linear 0.760 (319s)
+wrote results/study5c_partial_20261004_051117.csv
+[1] trained 2 encoders (153s)
+  [1] refine 4: n=100 nearest 0.252, n=100 linear 0.252, n=400 nearest 0.177, n=400 linear 0.177 (157s)
+  [1] refine 5: n=100 nearest 0.663, n=100 linear 0.521, n=400 nearest 0.614, n=400 linear 0.439 (167s)
+  [1] refine 6: n=100 nearest 0.801, n=100 linear 0.675, n=400 nearest 0.765, n=400 linear 0.583 (213s)
+  [1] refine 7: n=100 nearest 0.881, n=100 linear 0.787, n=400 nearest 0.861, n=400 linear 0.696 (750s)
+wrote results/study5c_partial_20261004_052347.csv

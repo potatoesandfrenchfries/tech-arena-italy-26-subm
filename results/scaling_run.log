@@ -1,0 +1,60 @@
+system: {'python': '3.12.3', 'numpy': '2.5.3', 'scipy': '1.18.1', 'torch': '2.14.1+cu130', 'torch_threads': 1, 'cpu': 'x86_64'}
+
+refine 4: N = 1504, lambda_1 = 7.604, assemble 0.4 ms, full solve 2.7 ms, eta_D 0.03 ms
+  dense_q16  q=  16 setup      0.9 ms (K fixed      0.5) small    0.03 ms | single      1.0 ms vs full      2.7 -> WINS | sweep F* 1 (K fixed 1) | p* 0.64
+  dense_q64  q=  64 setup      1.2 ms (K fixed      0.7) small    0.10 ms | single      1.3 ms vs full      2.7 -> WINS | sweep F* 1 (K fixed 1) | p* 0.51
+  dense_q128 q= 128 setup      3.0 ms (K fixed      1.6) small    0.22 ms | single      3.3 ms vs full      2.7 -> loses | sweep F* 2 (K fixed 1) | p* -0.23
+  coarse_r2  q=  88 setup      1.5 ms (K fixed      0.8) small    0.11 ms | single      1.6 ms vs full      2.7 -> WINS | sweep F* 1 (K fixed 1) | p* 0.39
+  coarse_r3  q= 368 setup     15.7 ms (K fixed      7.4) small    2.97 ms | single     18.7 ms vs full      2.7 -> loses | sweep F* inf (K fixed inf) | p* -6.05
+  (refine 4 took 1s)
+
+refine 5: N = 6080, lambda_1 = 7.489, assemble 1.5 ms, full solve 13.4 ms, eta_D 0.09 ms
+  dense_q16  q=  16 setup      2.1 ms (K fixed      1.5) small    0.04 ms | single      2.3 ms vs full     13.4 -> WINS | sweep F* 1 (K fixed 1) | p* 0.83
+  dense_q64  q=  64 setup      5.0 ms (K fixed      2.9) small    0.23 ms | single      5.3 ms vs full     13.4 -> WINS | sweep F* 1 (K fixed 1) | p* 0.60
+  dense_q128 q= 128 setup     14.8 ms (K fixed      7.3) small    0.41 ms | single     15.3 ms vs full     13.4 -> loses | sweep F* 2 (K fixed 1) | p* -0.15
+  coarse_r2  q=  88 setup      6.1 ms (K fixed      4.2) small    0.27 ms | single      6.4 ms vs full     13.4 -> WINS | sweep F* 1 (K fixed 1) | p* 0.52
+  coarse_r3  q= 368 setup     69.0 ms (K fixed     35.9) small    4.89 ms | single     74.0 ms vs full     13.4 -> loses | sweep F* 9 (K fixed 5) | p* -4.54
+  (refine 5 took 2s)
+
+refine 6: N = 24448, lambda_1 = 7.521, assemble 7.7 ms, full solve 86.0 ms, eta_D 0.42 ms
+  dense_q16  q=  16 setup     11.2 ms (K fixed      8.6) small    0.15 ms | single     11.7 ms vs full     86.0 -> WINS | sweep F* 1 (K fixed 1) | p* 0.86
+  dense_q64  q=  64 setup     29.6 ms (K fixed     17.9) small    0.75 ms | single     30.8 ms vs full     86.0 -> WINS | sweep F* 1 (K fixed 1) | p* 0.64
+  dense_q128 q= 128 setup     72.8 ms (K fixed     38.7) small    1.68 ms | single     74.9 ms vs full     86.0 -> WINS | sweep F* 1 (K fixed 1) | p* 0.13
+  coarse_r2  q=  88 setup     38.5 ms (K fixed     21.4) small    0.97 ms | single     39.8 ms vs full     86.0 -> WINS | sweep F* 1 (K fixed 1) | p* 0.54
+  coarse_r3  q= 368 setup    370.4 ms (K fixed    189.8) small    8.91 ms | single    379.8 ms vs full     86.0 -> loses | sweep F* 5 (K fixed 3) | p* -3.41
+  (refine 6 took 9s)
+
+refine 7: N = 98048, lambda_1 = 7.530, assemble 31.4 ms, full solve 726.6 ms, eta_D 2.18 ms
+  dense_q16  q=  16 setup     51.4 ms (K fixed     37.8) small    0.79 ms | single     54.3 ms vs full    726.6 -> WINS | sweep F* 1 (K fixed 1) | p* 0.93
+  dense_q64  q=  64 setup    191.2 ms (K fixed    108.0) small    3.34 ms | single    196.8 ms vs full    726.6 -> WINS | sweep F* 1 (K fixed 1) | p* 0.73
+  dense_q128 q= 128 setup    439.0 ms (K fixed    237.9) small    6.90 ms | single    448.1 ms vs full    726.6 -> WINS | sweep F* 1 (K fixed 1) | p* 0.38
+  coarse_r2  q=  88 setup    245.0 ms (K fixed    135.1) small    5.95 ms | single    253.2 ms vs full    726.6 -> WINS | sweep F* 1 (K fixed 1) | p* 0.65
+  coarse_r3  q= 368 setup   1546.4 ms (K fixed    771.7) small   26.54 ms | single   1575.1 ms vs full    726.6 -> loses | sweep F* 3 (K fixed 2) | p* -1.17
+  (refine 7 took 47s)
+
+refine 8: N = 392704, lambda_1 = 7.528, assemble 145.2 ms, full solve 6780.9 ms, eta_D 16.72 ms
+  dense_q16  q=  16 setup    312.6 ms (K fixed    236.2) small    5.54 ms | single    334.9 ms vs full   6780.9 -> WINS | sweep F* 1 (K fixed 1) | p* 0.95
+  dense_q64  q=  64 setup    969.7 ms (K fixed    620.2) small   18.77 ms | single   1005.2 ms vs full   6780.9 -> WINS | sweep F* 1 (K fixed 1) | p* 0.85
+  dense_q128 q= 128 setup   2068.1 ms (K fixed   1129.7) small   32.79 ms | single   2117.6 ms vs full   6780.9 -> WINS | sweep F* 1 (K fixed 1) | p* 0.69
+  coarse_r2  q=  88 setup   1163.7 ms (K fixed    605.4) small   21.90 ms | single   1202.3 ms vs full   6780.9 -> WINS | sweep F* 1 (K fixed 1) | p* 0.82
+  coarse_r3  q= 368 setup   6376.5 ms (K fixed   3240.7) small   99.13 ms | single   6492.4 ms vs full   6780.9 -> WINS | sweep F* 1 (K fixed 1) | p* 0.04
+  (refine 8 took 274s)
+
+Log-log slope of cost against N (all meshes run):
+  t_assemble_ms  1.05
+  t_full_ms      1.42
+  t_eta_ms       1.15
+  coarse_r2  setup 1.22  small(+reconstruct) 0.98
+  coarse_r3  setup 1.09  small(+reconstruct) 0.63
+  dense_q128 setup 1.18  small(+reconstruct) 0.92
+  dense_q16  setup 1.07  small(+reconstruct) 0.98
+  dense_q64  setup 1.23  small(+reconstruct) 0.95
+
+Smallest tested mesh where the single query wins (setup + small + eta_D < full):
+  coarse_r2  per-geometry K projection: 1504 | K projected once: 1504
+  coarse_r3  per-geometry K projection: 392704 | K projected once: 392704
+  dense_q128 per-geometry K projection: 24448 | K projected once: 1504
+  dense_q16  per-geometry K projection: 1504 | K projected once: 1504
+  dense_q64  per-geometry K projection: 1504 | K projected once: 1504
+
+wrote results/scaling_20261004_001742.csv; system: {'python': '3.12.3', 'numpy': '2.5.3', 'scipy': '1.18.1', 'torch': '2.14.1+cu130', 'torch_threads': 1, 'cpu': 'x86_64'}

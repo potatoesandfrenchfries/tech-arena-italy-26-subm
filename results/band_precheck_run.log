@@ -1,0 +1,12 @@
+lambda_1 = 7.604, n = 8, steps = 500
+  r=0.2 omega^2= 1.52: field 0.019 proj 0.017 energy 0.001 conv=False -> pass (12s)
+  r=0.3 omega^2= 2.28: field 0.021 proj 0.018 energy 0.003 conv=False -> pass (8s)
+  r=0.4 omega^2= 3.04: field 0.026 proj 0.020 energy 0.007 conv=True -> pass (13s)
+  r=0.5 omega^2= 3.80: field 0.038 proj 0.026 energy 0.018 conv=True -> pass (10s)
+  r=0.6 omega^2= 4.56: field 0.062 proj 0.042 energy 0.042 conv=True -> pass (8s)
+  r=0.7 omega^2= 5.32: field 0.106 proj 0.083 energy 0.080 conv=True -> fail (9s)
+  r=0.8 omega^2= 6.08: field 0.915 proj 0.883 energy 0.845 conv=True -> fail (8s)
+  r=0.9 omega^2= 6.84: field 0.946 proj 0.705 energy 0.989 conv=True -> fail  (indication only, not selectable) (10s)
+
+Band: r in [0.2, 0.6] (ratios [0.2, 0.3, 0.4, 0.5, 0.6])
+wrote results/band_precheck_20261003_235500.csv

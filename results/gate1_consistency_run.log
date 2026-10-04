@@ -1,0 +1,23 @@
+
+[low] omega^2 = 3.042
+  fine solution  dim=1504 gauss_W=nan gauss_r1=1.4e-14 gauss_r2=3.1e-14 gauss_r3=5.2e-14 gauss_fine=1.4e-13 power_balance=2.6e-14 rel_err=0.0e+00
+  coarse_r1      dim=  20 gauss_W=nan gauss_r1=1.2e-15 gauss_r2=5.3e-01 gauss_r3=6.4e-01 gauss_fine=6.6e-01 power_balance=2.7e-15 rel_err=8.1e-01
+  coarse_r2      dim=  88 gauss_W=nan gauss_r1=2.8e-15 gauss_r2=6.3e-15 gauss_r3=4.8e-01 gauss_fine=6.0e-01 power_balance=4.2e-15 rel_err=5.4e-01
+  coarse_r3      dim= 368 gauss_W=nan gauss_r1=8.4e-15 gauss_r2=2.3e-14 gauss_r3=5.1e-14 gauss_fine=5.0e-01 power_balance=2.2e-15 rel_err=3.3e-01
+  oracle n=4     dim=  10 gauss_W=3.8e-15 gauss_r1=3.3e-03 gauss_r2=6.3e-03 gauss_r3=1.1e-02 gauss_fine=7.2e-02 power_balance=6.7e-15 rel_err=2.9e-02
+    (12s)
+  oracle n=8     dim=  36 gauss_W=8.7e-15 gauss_r1=2.4e-03 gauss_r2=2.4e-03 gauss_r3=3.8e-03 gauss_fine=3.9e-02 power_balance=9.2e-15 rel_err=2.6e-02
+    (19s)
+  oracle n=16    dim= 136 gauss_W=3.6e-14 gauss_r1=1.6e-03 gauss_r2=1.7e-03 gauss_r3=3.3e-03 gauss_fine=3.2e-02 power_balance=2.4e-14 rel_err=2.4e-02
+    (52s)
+
+[gap] omega^2 = 13.217
+  fine solution  dim=1504 gauss_W=nan gauss_r1=4.6e-15 gauss_r2=5.7e-15 gauss_r3=1.5e-14 gauss_fine=3.9e-14 power_balance=6.9e-16 rel_err=0.0e+00
+  coarse_r1      dim=  20 gauss_W=nan gauss_r1=6.3e-16 gauss_r2=5.4e-01 gauss_r3=6.3e-01 gauss_fine=6.7e-01 power_balance=2.7e-15 rel_err=6.8e-01
+  coarse_r2      dim=  88 gauss_W=nan gauss_r1=1.2e-15 gauss_r2=2.5e-15 gauss_r3=4.6e-01 gauss_fine=6.1e-01 power_balance=4.7e-16 rel_err=4.2e-01
+  coarse_r3      dim= 368 gauss_W=nan gauss_r1=5.3e-15 gauss_r2=7.2e-15 gauss_r3=1.6e-14 gauss_fine=5.4e-01 power_balance=2.9e-15 rel_err=2.6e-01
+  oracle n=8     dim=  36 gauss_W=5.0e-15 gauss_r1=2.0e-02 gauss_r2=2.8e-02 gauss_r3=3.7e-02 gauss_fine=1.6e-01 power_balance=2.1e-15 rel_err=6.8e-02
+    (16s)
+  oracle n=16    dim= 136 gauss_W=1.6e-14 gauss_r1=2.4e-02 gauss_r2=2.7e-02 gauss_r3=3.1e-02 gauss_fine=8.6e-02 power_balance=4.2e-15 rel_err=6.1e-02
+    (44s)
+wrote results/gate1_consistency_20261003_220929.csv

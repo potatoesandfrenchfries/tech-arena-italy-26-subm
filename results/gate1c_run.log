@@ -1,0 +1,22 @@
+target eigenvalues [ 7.604  7.604 18.83  28.715], half-width 0.380, budget dim <= 150
+
+w = 0.1
+  n= 4 dim=  10 held: gal max 1.066 proj max 0.441 energy max 0.985 | train gal mean 0.989 | modes at true: 0, ghosts in band: 1, band [6.896] | fixed=False conv=False (17s)
+  n= 8 dim=  36 held: gal max 0.492 proj max 0.156 energy max 0.269 | train gal mean 0.429 | modes at true: 1, ghosts in band: 0, band [7.636] | fixed=False conv=False (38s)
+  n=12 dim=  78 held: gal max 0.300 proj max 0.034 energy max 0.140 | train gal mean 0.286 | modes at true: 1, ghosts in band: 0, band [7.634] | fixed=False conv=True (32s)
+  n=16 dim= 136 held: gal max 0.299 proj max 0.031 energy max 0.132 | train gal mean 0.283 | modes at true: 1, ghosts in band: 0, band [7.633] | fixed=False conv=True (45s)
+
+w = 1.0
+  n= 4 dim=  10 held: gal max 0.906 proj max 0.417 energy max 0.863 | train gal mean 0.872 | modes at true: 1, ghosts in band: 0, band [7.564] | fixed=False conv=True (10s)
+  n= 8 dim=  36 held: gal max 0.476 proj max 0.108 energy max 0.186 | train gal mean 0.408 | modes at true: 1, ghosts in band: 0, band [7.599] | fixed=False conv=False (26s)
+  n=12 dim=  78 held: gal max 0.326 proj max 0.033 energy max 0.145 | train gal mean 0.295 | modes at true: 2, ghosts in band: 0, band [7.519, 7.657] | fixed=True conv=False (30s)
+  n=16 dim= 136 held: gal max 0.303 proj max 0.027 energy max 0.139 | train gal mean 0.284 | modes at true: 2, ghosts in band: 0, band [7.578, 7.641] | fixed=True conv=False (45s)
+
+w = 10.0
+  n= 4 dim=  10 held: gal max 0.940 proj max 0.458 energy max 0.863 | train gal mean 0.933 | modes at true: 2, ghosts in band: 0, band [7.611, 7.624] | fixed=True conv=False (9s)
+  n= 8 dim=  36 held: gal max 0.480 proj max 0.174 energy max 0.261 | train gal mean 0.438 | modes at true: 2, ghosts in band: 0, band [7.553, 7.721] | fixed=True conv=False (33s)
+  n=12 dim=  78 held: gal max 0.308 proj max 0.035 energy max 0.133 | train gal mean 0.288 | modes at true: 2, ghosts in band: 0, band [7.586, 7.649] | fixed=True conv=False (63s)
+  n=16 dim= 136 held: gal max 0.307 proj max 0.029 energy max 0.132 | train gal mean 0.287 | modes at true: 2, ghosts in band: 0, band [7.585, 7.652] | fixed=True conv=True (45s)
+
+Verdict: SPECTRUM FIXED BUT INACCURATE: 6 configurations with the spectrum fixed; best w=10.0, n=16, held-out energy 0.132
+wrote results/gate1c_20261003_224544.csv

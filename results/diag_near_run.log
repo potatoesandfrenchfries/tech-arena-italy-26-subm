@@ -1,0 +1,23 @@
+near: omega^2 = 7.756, true lambda_1 = 7.604 (x2), half-width = 0.388
+true spectrum, first physical: [ 7.604  7.604 18.83  28.715]
+
+n = 8
+  proj-optimised W     dim=  36 proj=0.023 galerkin=1.154 minres=0.999 | +exact modes: galerkin=0.558 minres=0.138 | below lam1: 2, lowest [5.785, 7.32, 8.536], nearest omega^2 7.320 (within width: False)
+  + Galerkin steps     dim=  36 proj=0.848 galerkin=0.998 minres=1.000 | +exact modes: galerkin=0.163 minres=0.143 | below lam1: 0, lowest [11.663, 57.909, 101.8], nearest omega^2 11.663 (within width: False)
+  (23s)
+
+n = 12
+  proj-optimised W     dim=  78 proj=0.017 galerkin=1.039 minres=0.998 | +exact modes: galerkin=0.030 minres=0.134 | below lam1: 3, lowest [1.892, 4.525, 5.484], nearest omega^2 8.356 (within width: False)
+  + Galerkin steps     dim=  78 proj=0.570 galerkin=0.980 minres=0.990 | +exact modes: galerkin=0.148 minres=0.068 | below lam1: 0, lowest [11.726, 23.632, 51.282], nearest omega^2 11.726 (within width: False)
+  (29s)
+
+n = 16
+  proj-optimised W     dim= 136 proj=0.015 galerkin=1.037 minres=0.997 | +exact modes: galerkin=0.014 minres=0.123 | below lam1: 3, lowest [1.069, 2.998, 5.074], nearest omega^2 8.333 (within width: False)
+  + Galerkin steps     dim= 136 proj=0.750 galerkin=0.993 minres=0.996 | +exact modes: galerkin=0.161 minres=0.118 | below lam1: 0, lowest [11.647, 13.293, 31.111], nearest omega^2 11.647 (within width: False)
+  (69s)
+
+Controls: non-learned compatible spaces
+  coarse_r1            dim=  20 proj=0.385 galerkin=0.753 minres=0.998 | +exact modes: galerkin=0.119 minres=0.121 | below lam1: 2, lowest [7.071, 7.071, 19.2], nearest omega^2 7.071 (within width: False)
+  coarse_r2            dim=  88 proj=0.250 galerkin=0.559 minres=0.993 | +exact modes: galerkin=0.079 minres=0.083 | below lam1: 2, lowest [7.284, 7.284, 17.922], nearest omega^2 7.284 (within width: False)
+  coarse_r3            dim= 368 proj=0.133 galerkin=0.245 minres=0.990 | +exact modes: galerkin=0.047 minres=0.052 | below lam1: 2, lowest [7.513, 7.513, 18.773], nearest omega^2 7.513 (within width: True)
+wrote results/diag_near_20261003_215800.csv

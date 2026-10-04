@@ -1,0 +1,34 @@
+% Shared preamble for the slide diagrams. Palette and ink colours match figures/make_figures.py.
+\usepackage[T1]{fontenc}
+\usepackage{dejavu}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc,fit,backgrounds,decorations.pathmorphing,patterns}
+
+\definecolor{surface}{HTML}{FCFCFB}
+\definecolor{ink}{HTML}{0B0B0B}
+\definecolor{inktwo}{HTML}{52514E}
+\definecolor{muted}{HTML}{898781}
+\definecolor{gridc}{HTML}{E1E0D9}
+\definecolor{axisc}{HTML}{C3C2B7}
+\definecolor{cblue}{HTML}{2A78D6}
+\definecolor{corange}{HTML}{EB6834}
+\definecolor{cgreen}{HTML}{1BAF7A}
+\definecolor{camber}{HTML}{EDA100}
+
+\newcommand{\tg}[1]{{\scriptsize\color{inktwo}#1}}  % small secondary line inside a node
+
+\pagecolor{surface}
+\color{ink}
+
+\tikzset{
+  every node/.style={text=ink},
+  % one box style; the argument is the role colour (blue learned, inktwo exact/fixed, corange verification, ...)
+  box/.style={draw=#1, fill=#1!10, rounded corners=3pt, line width=0.9pt, align=center,
+              inner xsep=6pt, inner ysep=5pt, minimum height=1.25cm, text width=2.75cm, font=\footnotesize},
+  tag/.style={font=\scriptsize, text=inktwo, align=center},
+  arr/.style={-{Stealth[length=5.5pt,width=4.5pt]}, line width=0.9pt, color=inktwo},
+  darr/.style={arr, dashed},
+}

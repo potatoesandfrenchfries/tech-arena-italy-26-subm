@@ -1,0 +1,18 @@
+w_spec = 10.0, w_cap in [0.1, 1.0], target eigenvalues [ 7.604  7.604 18.83  28.715], budget dim <= 150
+capture err^2 with the 10 lowest exact transverse eigenvectors: [0.0, 0.0, 0.0, 0.0] (expected ~0)
+capture err^2 with a random transverse 16-dimensional space: [1.0, 1.0, 1.0, 1.0] (expected near 1)
+
+w_cap = 0.1
+  n= 4 dim=   6 held: gal mean 1.082 max 1.615 proj max 0.117 energy max 0.964 | capture err^2 pair 0.2117 l3 0.4131 l4 0.1358 | modes at true: 0, ghosts: 0, band [] | fixed=False conv=False (27s)
+  n= 8 dim=  28 held: gal mean 0.910 max 1.564 proj max 0.015 energy max 2.844 | capture err^2 pair 0.0746 l3 0.1157 l4 0.0417 | modes at true: 0, ghosts: 2, band [8.281, 8.286] | fixed=False conv=True (59s)
+  n=12 dim=  66 held: gal mean 0.908 max 1.561 proj max 0.013 energy max 2.831 | capture err^2 pair 0.0741 l3 0.1148 l4 0.0409 | modes at true: 0, ghosts: 2, band [8.278, 8.279] | fixed=False conv=True (64s)
+  n=16 dim= 119 held: gal mean 0.915 max 1.574 proj max 0.014 energy max 2.893 | capture err^2 pair 0.0753 l3 0.1178 l4 0.0417 | modes at true: 0, ghosts: 2, band [8.283, 8.299] | fixed=False conv=True (61s)
+
+w_cap = 1.0
+  n= 4 dim=   6 held: gal mean 1.080 max 1.605 proj max 0.123 energy max 0.966 | capture err^2 pair 0.2258 l3 0.5285 l4 0.0551 | modes at true: 0, ghosts: 0, band [] | fixed=False conv=True (18s)
+  n= 8 dim=  28 held: gal mean 0.923 max 1.586 proj max 0.016 energy max 2.947 | capture err^2 pair 0.0751 l3 0.1162 l4 0.0414 | modes at true: 0, ghosts: 2, band [8.285, 8.292] | fixed=False conv=True (36s)
+  n=12 dim=  66 held: gal mean 0.908 max 1.563 proj max 0.013 energy max 2.846 | capture err^2 pair 0.0739 l3 0.1147 l4 0.0409 | modes at true: 0, ghosts: 2, band [8.276, 8.278] | fixed=False conv=True (55s)
+  n=16 dim= 120 held: gal mean 0.909 max 1.566 proj max 0.012 energy max 2.856 | capture err^2 pair 0.0740 l3 0.1148 l4 0.0408 | modes at true: 0, ghosts: 2, band [8.277, 8.279] | fixed=False conv=True (70s)
+
+Verdict: NO IMPROVEMENT: best affordable held-out gal mean 0.908 (w_cap=0.1, n=12)
+wrote results/gate1f_20261003_233910.csv

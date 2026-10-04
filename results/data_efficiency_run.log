@@ -1,0 +1,63 @@
+device cuda, grid 64, epochs 200
+  [0] n_train= 25 fno     median field 0.460 mean 0.474 | median energy 0.222 | energy<5%: 0.11 field<10%: 0.00 | floor 0.002, 4s
+  [0] n_train= 25 pod36   median field 0.517 mean 0.680 | median energy 0.100 | energy<5%: 0.30 field<10%: 0.00
+  [0] n_train= 25 pod136  median field 0.637 mean 0.791 | median energy 0.160 | energy<5%: 0.23 field<10%: 0.00
+  [0] n_train= 50 fno     median field 0.337 mean 0.343 | median energy 0.125 | energy<5%: 0.23 field<10%: 0.00 | floor 0.002, 7s
+  [0] n_train= 50 pod36   median field 0.576 mean 0.763 | median energy 0.183 | energy<5%: 0.17 field<10%: 0.00
+  [0] n_train= 50 pod136  median field 0.399 mean 0.487 | median energy 0.081 | energy<5%: 0.39 field<10%: 0.00
+  [0] n_train=100 fno     median field 0.237 mean 0.248 | median energy 0.084 | energy<5%: 0.31 field<10%: 0.00 | floor 0.002, 12s
+  [0] n_train=100 pod36   median field 0.500 mean 0.677 | median energy 0.132 | energy<5%: 0.23 field<10%: 0.00
+  [0] n_train=100 pod136  median field 0.273 mean 0.318 | median energy 0.042 | energy<5%: 0.56 field<10%: 0.02
+  [0] n_train=200 fno     median field 0.188 mean 0.199 | median energy 0.065 | energy<5%: 0.40 field<10%: 0.00 | floor 0.002, 24s
+  [0] n_train=200 pod36   median field 0.273 mean 0.284 | median energy 0.051 | energy<5%: 0.49 field<10%: 0.00
+  [0] n_train=200 pod136  median field 0.240 mean 0.309 | median energy 0.033 | energy<5%: 0.62 field<10%: 0.01
+  [0] n_train=400 fno     median field 0.146 mean 0.158 | median energy 0.051 | energy<5%: 0.49 field<10%: 0.06 | floor 0.002, 47s
+  [0] n_train=400 pod36   median field 0.250 mean 0.264 | median energy 0.050 | energy<5%: 0.50 field<10%: 0.00
+  [0] n_train=400 pod136  median field 0.241 mean 0.304 | median energy 0.038 | energy<5%: 0.57 field<10%: 0.02
+repeat 0: 526s
+  [1] n_train= 25 fno     median field 0.412 mean 0.443 | median energy 0.228 | energy<5%: 0.15 field<10%: 0.00 | floor 0.001, 4s
+  [1] n_train= 25 pod36   median field 0.771 mean 0.970 | median energy 0.251 | energy<5%: 0.16 field<10%: 0.00
+  [1] n_train= 25 pod136  median field 0.731 mean 0.867 | median energy 0.169 | energy<5%: 0.18 field<10%: 0.00
+  [1] n_train= 50 fno     median field 0.293 mean 0.313 | median energy 0.178 | energy<5%: 0.13 field<10%: 0.00 | floor 0.001, 7s
+  [1] n_train= 50 pod36   median field 0.593 mean 0.861 | median energy 0.173 | energy<5%: 0.25 field<10%: 0.00
+  [1] n_train= 50 pod136  median field 0.367 mean 0.432 | median energy 0.062 | energy<5%: 0.45 field<10%: 0.00
+  [1] n_train=100 fno     median field 0.234 mean 0.244 | median energy 0.116 | energy<5%: 0.22 field<10%: 0.00 | floor 0.001, 12s
+  [1] n_train=100 pod36   median field 0.377 mean 0.559 | median energy 0.076 | energy<5%: 0.34 field<10%: 0.00
+  [1] n_train=100 pod136  median field 0.266 mean 0.324 | median energy 0.044 | energy<5%: 0.53 field<10%: 0.01
+  [1] n_train=200 fno     median field 0.174 mean 0.187 | median energy 0.063 | energy<5%: 0.38 field<10%: 0.02 | floor 0.001, 25s
+  [1] n_train=200 pod36   median field 0.275 mean 0.335 | median energy 0.056 | energy<5%: 0.44 field<10%: 0.00
+  [1] n_train=200 pod136  median field 0.299 mean 0.352 | median energy 0.066 | energy<5%: 0.42 field<10%: 0.01
+  [1] n_train=400 fno     median field 0.146 mean 0.156 | median energy 0.047 | energy<5%: 0.54 field<10%: 0.07 | floor 0.001, 49s
+  [1] n_train=400 pod36   median field 0.237 mean 0.267 | median energy 0.043 | energy<5%: 0.57 field<10%: 0.00
+  [1] n_train=400 pod136  median field 0.291 mean 0.355 | median energy 0.063 | energy<5%: 0.44 field<10%: 0.01
+repeat 1: 541s
+  [2] n_train= 25 fno     median field 0.472 mean 0.496 | median energy 0.240 | energy<5%: 0.13 field<10%: 0.00 | floor 0.002, 4s
+  [2] n_train= 25 pod36   median field 0.613 mean 0.743 | median energy 0.118 | energy<5%: 0.24 field<10%: 0.00
+  [2] n_train= 25 pod136  median field 0.626 mean 0.775 | median energy 0.147 | energy<5%: 0.22 field<10%: 0.00
+  [2] n_train= 50 fno     median field 0.328 mean 0.335 | median energy 0.136 | energy<5%: 0.22 field<10%: 0.00 | floor 0.002, 7s
+  [2] n_train= 50 pod36   median field 0.500 mean 0.654 | median energy 0.129 | energy<5%: 0.27 field<10%: 0.00
+  [2] n_train= 50 pod136  median field 0.367 mean 0.451 | median energy 0.065 | energy<5%: 0.43 field<10%: 0.00
+  [2] n_train=100 fno     median field 0.251 mean 0.263 | median energy 0.085 | energy<5%: 0.32 field<10%: 0.00 | floor 0.002, 13s
+  [2] n_train=100 pod36   median field 0.506 mean 0.739 | median energy 0.158 | energy<5%: 0.22 field<10%: 0.00
+  [2] n_train=100 pod136  median field 0.254 mean 0.293 | median energy 0.031 | energy<5%: 0.63 field<10%: 0.03
+  [2] n_train=200 fno     median field 0.202 mean 0.209 | median energy 0.069 | energy<5%: 0.37 field<10%: 0.01 | floor 0.002, 28s
+  [2] n_train=200 pod36   median field 0.280 mean 0.300 | median energy 0.058 | energy<5%: 0.45 field<10%: 0.00
+  [2] n_train=200 pod136  median field 0.316 mean 0.391 | median energy 0.070 | energy<5%: 0.41 field<10%: 0.01
+  [2] n_train=400 fno     median field 0.159 mean 0.164 | median energy 0.050 | energy<5%: 0.50 field<10%: 0.07 | floor 0.002, 47s
+  [2] n_train=400 pod36   median field 0.256 mean 0.265 | median energy 0.053 | energy<5%: 0.47 field<10%: 0.00
+  [2] n_train=400 pod136  median field 0.286 mean 0.363 | median energy 0.062 | energy<5%: 0.41 field<10%: 0.03
+repeat 2: 309s
+
+Mean over repeats: median field error / median energy error
+  fno     25: 0.448/0.230, 50: 0.320/0.147, 100: 0.241/0.095, 200: 0.188/0.066, 400: 0.150/0.049
+  pod36   25: 0.634/0.156, 50: 0.556/0.162, 100: 0.461/0.122, 200: 0.276/0.055, 400: 0.248/0.048
+  pod136  25: 0.665/0.159, 50: 0.378/0.069, 100: 0.265/0.039, 200: 0.285/0.056, 400: 0.273/0.054
+
+Smallest training size with mean median-field error below 10% / mean median-energy error below 5%:
+  fno     field: None, energy: 400
+  pod36   field: None, energy: 400
+  pod136  field: None, energy: 100
+
+FNO / POD-136 median field error ratio by size: 25: 0.67, 50: 0.85, 100: 0.91, 200: 0.66, 400: 0.55
+
+wrote results/data_efficiency_20261004_005918.csv
